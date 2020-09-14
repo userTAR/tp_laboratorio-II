@@ -3,4 +3,3 @@ C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tom
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tomas-TP1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tomas-TP1\Entidades\obj\Debug\Entidades.dll
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tomas-TP1\Entidades\obj\Debug\Entidades.pdb
-C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tomas-TP1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache

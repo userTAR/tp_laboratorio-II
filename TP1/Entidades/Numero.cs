@@ -124,8 +124,8 @@ namespace Entidades
         public string BinarioDecimal(string binario)
         {
             string retorno="Valor inválido";
-            bool check;
-            if(check=EsBinario(binario)==true)
+            bool check = EsBinario(binario);
+            if(check==true)
             {
                 retorno = Convert.ToInt64(binario, 2).ToString();
             }
@@ -141,13 +141,15 @@ namespace Entidades
             string retorno="Valor Inválido";
             double check;
             int checkAux;
-
-            retorno = Convert.ToString(numero); //convierto el double en string
-            check = ValidarNumero(retorno);//chequeo que sea un numero valido
-            if(check!=0)
-            {
-                checkAux = Convert.ToInt32(check);//convierto el numero validado en INT
-                retorno = DecimalABinario(checkAux);//retorno el binario del INT anterior
+            if (numero != double.MinValue)
+            { 
+                retorno = Convert.ToString(numero); //convierto el double en string
+                check = ValidarNumero(retorno);//chequeo que sea un numero valido
+                if(check!=0 && check>0)
+                {
+                    checkAux = Convert.ToInt32(check);//convierto el numero validado en INT
+                    retorno = DecimalABinario(checkAux);//retorno el binario del INT anterior
+                }
             }
 
             return retorno;
@@ -164,7 +166,7 @@ namespace Entidades
             int checkAux;
 
             check = ValidarNumero(numero);//chequeo que sea un numero valido
-            if (check != 0)
+            if (check != 0 && check>0)
             {
                 checkAux = Convert.ToInt32(check);//lo convierto a INT
                 retorno = DecimalABinario(checkAux);//retorno el binario del INT anterior
