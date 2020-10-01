@@ -8,11 +8,16 @@ using System.Drawing;
 
 namespace Entidades
 {
-    class Sedan : Vehiculo
+    public class Sedan : Vehiculo
     {
+        #region enumerados
         public enum ETipo { CuatroPuertas, CincoPuertas }
+        #endregion
+        #region atributos
         ETipo tipo;
+        #endregion
 
+        #region constructor
         /// <summary>
         /// Por defecto, TIPO será Monovolumen
         /// </summary>
@@ -24,19 +29,22 @@ namespace Entidades
         {
             tipo = ETipo.CuatroPuertas;
         }
-
+        #endregion
+        #region propiedades
         /// <summary>
         /// Los automoviles son medianos
         /// </summary>
-        protected override short Tamanio
+        protected override ETamaño GetTamaño
         {
             get
             {
-                return this.Tamanio;
+                return ETamaño.Mediano;
             }
         }
+        #endregion
 
-        public override sealed string Mostrar()
+        #region sobrecargas
+        public override sealed string Mostrar()// quedé en esta función
         {
             StringBuilder sb = new StringBuilder();
 
@@ -49,5 +57,6 @@ namespace Entidades
 
             return sb;
         }
+        #endregion
     }
 }
