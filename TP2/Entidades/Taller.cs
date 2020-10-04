@@ -24,10 +24,18 @@ namespace Entidades
         #endregion
 
         #region constructores
+        /// <summary>
+        /// Constructor privado de Taller, inicializa solamente la lista
+        /// </summary>
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
+        /// <summary>
+        /// Constructor público de Taller, llama al constructor privado y luego inicializa la 
+        /// cantidad de espacios disponibles según parámetro de la función
+        /// </summary>
+        /// <param name="espacioDisponible"></param>
         public Taller(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
