@@ -11,6 +11,9 @@ namespace Entidades
     public class Sedan : Vehiculo
     {
         #region enumerados
+        /// <summary>
+        /// enumerado de tipo
+        /// </summary>
         public enum ETipo { CuatroPuertas, CincoPuertas }
         #endregion
 
@@ -20,7 +23,7 @@ namespace Entidades
 
         #region constructor
         /// <summary>
-        /// Por defecto, TIPO será Monovolumen
+        /// Constructor de Sedan, llamando a constructor de base e inicializando el tipo a CuatroPuertas
         /// </summary>
         /// <param name="marca"></param>
         /// <param name="chasis"></param>
@@ -30,6 +33,14 @@ namespace Entidades
         {
             tipo = ETipo.CuatroPuertas;
         }
+        /// <summary>
+        /// Constructor de Sedan, llamando a la primer sobrecarga del constructor y cambiando 
+        /// el tipo al pasado por parámetro
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="chasis"></param>
+        /// <param name="color"></param>
+        /// <param name="tipo"></param>
         public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo):this(marca, chasis, color)
         {
             this.tipo = tipo;
@@ -50,6 +61,10 @@ namespace Entidades
         #endregion
 
         #region sobrecargas
+        /// <summary>
+        /// Concatena toda la información sobre el objeto SEDAN, llamando a mostrar de clase padre
+        /// </summary>
+        /// <returns>string con toda la información del objeto</returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

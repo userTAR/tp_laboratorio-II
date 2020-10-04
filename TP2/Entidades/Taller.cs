@@ -11,37 +11,41 @@ namespace Entidades
     /// </summary>
     public class Taller
     {
-        List<Vehiculo> vehiculos;
-        int espacioDisponible;
+        #region atributos
+        private List<Vehiculo> vehiculos;
+        private int espacioDisponible;
+        #endregion
+
+        #region enumerados
         public enum ETipo
         {
-            Moto, Automovil, Camioneta, Todos
+            Ciclomotor, Sedan, SUV, Todos
         }
+        #endregion
 
-        #region "Constructores"
+        #region constructores
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
-        public Taller(int espacioDisponible)
+        public Taller(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
         }
         #endregion
 
-        #region "Sobrecargas"
+        #region sobrecargas
         /// <summary>
         /// Muestro el estacionamiento y TODOS los vehículos
         /// </summary>
         /// <returns></returns>
-        public string ToString()
+        public override string ToString()
         {
-            return Taller.Listar(this, ETipo.Todos);
+            return this.Listar(this, ETipo.Todos);
         }
         #endregion
 
-        #region "Métodos"
-
+        #region metodos
         /// <summary>
         /// Expone los datos del elemento y su lista (incluidas sus herencias)
         /// SOLO del tipo requerido
@@ -53,32 +57,26 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendFormat("Tenemos {0} lugares ocupados de un total de {1} disponibles", taller.vehiculos.Count, taller.espacioDisponible);
-            sb.AppendLine("");
-            foreach (Vehiculo v in taller.vehiculos)
-            {
-                switch (tipo)
-                {
-                    case ETipo.Camioneta:
-                        sb.AppendLine(v.Mostrar());
-                        break;
-                    case ETipo.Moto:
-                        sb.AppendLine(v.Mostrar());
-                        break;
-                    case ETipo.Automovil:
-                        sb.AppendLine(v.Mostrar());
-                        break;
-                    default:
-                        sb.AppendLine(v.Mostrar());
-                        break;
-                }
-            }
+            sb.AppendLine($"Tenemos {this.vehiculos.Count} lugares ocupados de un total de {this.espacioDisponible} disponibles");
 
-            return sb;
+            foreach (Vehiculo v in this.vehiculos)
+            {
+                if (tipo == ETipo.Ciclomotor && v is Ciclomotor)
+                    sb.AppendLine(v.Mostrar());
+                else if (tipo == ETipo.SUV && v is Suv)
+                    sb.AppendLine(v.Mostrar());
+                else if (tipo == ETipo.Sedan && v is Sedan)
+                    sb.AppendLine(v.Mostrar());
+                else
+                    sb.AppendLine(v.Mostrar());
+            }
+            return sb.ToString();
         }
+
+
         #endregion
 
-        #region "Operadores"
+        #region operadores
         /// <summary>
         /// Agregará un elemento a la lista
         /// </summary>
@@ -87,13 +85,15 @@ namespace Entidades
         /// <returns></returns>
         public static Taller operator +(Taller taller, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller)
+            bool check = false;
+            foreach (Vehiculo v in taller.vehiculos)
             {
                 if (v == vehiculo)
-                    return taller;
+                    check = true;
             }
-
-            taller.vehiculos.Add(vehiculo);
+            if (check == false)
+                taller.vehiculos.Add(vehiculo);
+            
             return taller;
         }
         /// <summary>
@@ -104,16 +104,18 @@ namespace Entidades
         /// <returns></returns>
         public static Taller operator -(Taller taller, Vehiculo vehiculo)
         {
-            foreach (Vehiculo v in taller)
+            bool check = false;
+            foreach (Vehiculo v in taller.vehiculos)
             {
                 if (v == vehiculo)
-                {
-                    break;
-                }
+                    check = true;
             }
+            if (check == true)
+                taller.vehiculos.Remove(vehiculo);
 
             return taller;
         }
         #endregion
     }
 }
+

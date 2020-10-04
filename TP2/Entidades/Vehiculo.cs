@@ -12,10 +12,16 @@ namespace Entidades
     public abstract class Vehiculo
     {
         #region enumerados
+        /// <summary>
+        /// Marcas de vehículos
+        /// </summary>
         public enum EMarca
         {
             Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
         }
+        /// <summary>
+        /// Tamaños de vehículos
+        /// </summary>
         public enum ETamaño
         {
             Chico, Mediano, Grande
@@ -29,6 +35,12 @@ namespace Entidades
         #endregion
 
         #region constructor
+        /// <summary>
+        /// Constructor de vehículo, inicializando el chasis, marca y color según parámetros de la función
+        /// </summary>
+        /// <param name="chasis"></param>
+        /// <param name="marca"></param>
+        /// <param name="color"></param>
         public Vehiculo(string chasis, EMarca marca, ConsoleColor color)
         {
             this.chasis = chasis;
@@ -61,9 +73,9 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("CHASIS: {0}\r\n" + p.chasis);
-            sb.AppendLine("MARCA : {0}\r\n" + p.marca.ToString());
-            sb.AppendLine("COLOR : {0}\r\n" + p.color.ToString());
+            sb.AppendLine($"CHASIS: {p.chasis}\r\n");
+            sb.AppendLine($"MARCA : {p.marca.ToString()}\r\n");
+            sb.AppendLine($"COLOR : {p.color.ToString()}\r\n");
             sb.AppendLine("---------------------\n");
 
             return sb.ToString();
