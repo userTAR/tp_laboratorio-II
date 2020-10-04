@@ -64,19 +64,28 @@ namespace Entidades
         public string Listar(Taller taller, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
-
             sb.AppendLine($"Tenemos {this.vehiculos.Count} lugares ocupados de un total de {this.espacioDisponible} disponibles");
 
             foreach (Vehiculo v in this.vehiculos)
             {
-                if (tipo == ETipo.Ciclomotor && v is Ciclomotor)
-                    sb.AppendLine(v.Mostrar());
-                else if (tipo == ETipo.SUV && v is Suv)
-                    sb.AppendLine(v.Mostrar());
-                else if (tipo == ETipo.Sedan && v is Sedan)
-                    sb.AppendLine(v.Mostrar());
-                else
-                    sb.AppendLine(v.Mostrar());
+                switch(tipo)
+                {
+                    case ETipo.Ciclomotor:
+                        if(v is Ciclomotor)
+                            sb.AppendLine(v.Mostrar());
+                        break;
+                    case ETipo.Sedan: 
+                        if(v is Sedan)
+                            sb.AppendLine(v.Mostrar());
+                        break;
+                    case ETipo.SUV: 
+                        if(v is Suv)
+                            sb.AppendLine(v.Mostrar());
+                        break;
+                    default:
+                        sb.AppendLine(v.Mostrar());
+                        break;
+                }
             }
             return sb.ToString();
         }
