@@ -8,5 +8,6 @@ namespace Archivos
 {
     public interface IArchivo<T>
     {
+
     }
 }
