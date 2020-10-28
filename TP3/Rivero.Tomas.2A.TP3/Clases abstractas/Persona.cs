@@ -91,7 +91,10 @@ namespace Clases_abstractas
         #region sobrecargas
         public override string ToString()
         {
-            
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("NOMBRE COMPLETO: {0}, {1}\nNACIONALIDAD: {2}", this.Apellido, this.Nombre, this.Nacionalidad.ToString());
+
+            return sb.ToString();
         }
         #endregion
     }

@@ -26,12 +26,12 @@ namespace Clases_abstractas
         #region metodos
         protected string MostrarDatos()
         {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("{0}\nLEGAJO NÚMERO:{1}",base.ToString(), this.legajo);
 
+            return sb.ToString();
         }
-        protected string ParticiparEnClase()
-        {
-
-        }
+        protected abstract string ParticiparEnClase();
         #endregion
 
         #region sobrecargas
@@ -42,7 +42,7 @@ namespace Clases_abstractas
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
             bool rta = false;
-            if ((pg1.GetType() == pg2.GetType()) && (pg1.DNI == pg2.DNI || pg1.legajo == pg2.legajo))
+            if (pg1.DNI == pg2.DNI || pg1.legajo == pg2.legajo)
                 rta = true;
             return rta;
         }
