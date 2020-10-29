@@ -47,5 +47,11 @@
     <Compile Include="Profesor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clases abstractas\Clases abstractas.csproj">
+      <Project>{a3c089db-b5dd-4f47-9b86-5cdadbf3c001}</Project>
+      <Name>Clases abstractas</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

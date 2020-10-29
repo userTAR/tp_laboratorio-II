@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Clases_Instanciables;
 
 namespace Clases_abstractas
 {
@@ -24,7 +23,7 @@ namespace Clases_abstractas
         }
         #endregion
         #region metodos
-        protected string MostrarDatos()
+        protected virtual string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat("{0}\nLEGAJO NÚMERO:{1}",base.ToString(), this.legajo);

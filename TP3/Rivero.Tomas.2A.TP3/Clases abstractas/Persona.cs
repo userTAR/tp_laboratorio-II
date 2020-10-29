@@ -129,7 +129,7 @@ namespace Clases_abstractas
             return ret;
         }
         #endregion
-
+        
         #region sobrecargas
         public override string ToString()
         {
