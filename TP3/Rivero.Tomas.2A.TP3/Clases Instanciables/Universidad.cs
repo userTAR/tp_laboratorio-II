@@ -22,5 +22,85 @@ namespace Clases_Instanciables
             SPD
         }
         #endregion
+
+        #region constructores
+        public Universidad()
+        {
+
+        }
+        #endregion
+
+        #region metodos
+        public bool Guardar(Universidad uni)
+        {
+
+        }
+        public Universidad Leer()
+        {
+
+        }
+        private string MostrarDatos(Universidad uni)
+        {
+
+        }
+
+        #endregion
+        #region sobrecargas
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+
+            return sb.ToString();
+        }
+        public static bool operator ==(Universidad g, Alumno a)
+        {
+
+        }
+        public static bool operator !=(Universidad g, Alumno a)
+        {
+
+        }
+        public static bool operator ==(Universidad g,Profesor p)
+        {
+
+        }
+        public static bool operator !=(Universidad g, Profesor p)
+        {
+
+        }
+        public static bool operator ==(Universidad g, EClases clase)
+        {
+
+        }
+        public static bool operator !=(Universidad g, EClases clase)
+        {
+
+        }
+        public static Universidad operator +(Universidad g, EClases clase)
+        {
+
+        }
+        public static Universidad operator -(Universidad g, EClases clase)
+        {
+
+        }
+        public static Universidad operator +(Universidad g, Alumno a)
+        {
+
+        }
+        public static Universidad operator -(Universidad g, Alumno a)
+        {
+
+        }
+        public static Universidad operator +(Universidad g, Profesor p)
+        {
+
+        }
+        public static Universidad operator -(Universidad g, Profesor p)
+        {
+
+        }
+        #endregion
     }
 }
