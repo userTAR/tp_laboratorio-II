@@ -44,29 +44,32 @@ namespace Clases_Instanciables
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("{0}\nEstado de cuenta:{1}\nToma clases de:{2}\n",base.MostrarDatos(),this.estadoCuenta,this.claseQueToma);
+            sb.AppendFormat("{0}\nEstado de cuenta:{1}\n{2}\n",base.MostrarDatos(),this.estadoCuenta,ParticiparEnClase());
 
             return sb.ToString();
         }
-        protected string ParticiparEnClase()
+        protected override string ParticiparEnClase()
         {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("TOMA CLASE DE: {0}", this.claseQueToma);
 
+            return sb.ToString();
         }
         #endregion
 
         #region sobrecargas
         public static bool operator !=(Alumno a, Universidad.EClases clase)
         {
-
+            return (a.claseQueToma != clase);
         }
         public static bool operator ==(Alumno a, Universidad.EClases clase)
         {
-
+            return (a.claseQueToma == clase && a.estadoCuenta != EEstadoCuenta.Deudor);
         }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("")
+            sb.AppendLine(this.MostrarDatos());
 
             return sb.ToString();
         }
