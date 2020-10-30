@@ -8,7 +8,7 @@ using Clases_abstractas;
 
 namespace Clases_Instanciables
 {
-    sealed class Alumno : Universitario
+    public sealed class Alumno : Universitario
     {
         #region atributos
         private Universidad.EClases claseQueToma;
