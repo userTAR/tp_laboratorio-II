@@ -160,39 +160,34 @@ namespace Clases_Instanciables
         }
         public static Universidad operator +(Universidad g, EClases clase)
         {
-            List<Alumno> alumnoAux = new List<Alumno>();
-            foreach(Profesor aux in g.profesores)
+            bool flag = false;
+            //List<Alumno> alumnoAux = new List<Alumno>();
+            foreach(Profesor profesorAux in g.profesores)
             {
-                if (aux == clase)
+                if (profesorAux == clase)
                 {
-                    g.jornada.Add(new Jornada(clase, aux));
+                    flag = true;
+                    Jornada jornada = new Jornada(clase, profesorAux);
+                    foreach (Alumno alumnoAux in g.Alumnos)
+                    {
+                        if (alumnoAux == clase)
+                            jornada.Alumnos.Add(alumnoAux);
+                    }
+                    g.jornada.Add(jornada);
                     break;
                 }
-                else
-                    throw new SinProfesorException();
             }
-            foreach(Alumno aux in g.Alumnos)
-            {
-                if (aux == clase)
-                    alumnoAux.Add(aux);
-            }
+            if(!(flag))
+                throw new SinProfesorException();
 
             return g;
-        }
-        public static Universidad operator -(Universidad g, EClases clase)
-        {
-
         }
         public static Universidad operator +(Universidad g, Alumno a)
         {
             if (!(g == a))
                 g.alumnos.Add(a);
-            return g;
-        }
-        public static Universidad operator -(Universidad g, Alumno a)
-        {
-            if (g == a)
-                g.alumnos.Remove(a);
+            else
+                throw new AlumnoRepetidoException();
             return g;
         }
         public static Universidad operator +(Universidad g, Profesor p)
@@ -201,12 +196,7 @@ namespace Clases_Instanciables
                 g.profesores.Add(p);
             return g;
         }
-        public static Universidad operator -(Universidad g, Profesor p)
-        {
-            if (g == p)
-                g.profesores.Remove(p);
-            return g;
-        }
+        
         #endregion
     }
 }
