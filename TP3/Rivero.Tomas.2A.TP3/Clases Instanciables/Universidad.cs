@@ -23,7 +23,58 @@ namespace Clases_Instanciables
             SPD
         }
         #endregion
-
+        #region propiedades
+        public List<Alumno> Alumnos
+        {
+            get
+            {
+                return this.alumnos;
+            }
+            set
+            {
+                this.alumnos = value;
+            }
+        }
+        public List<Profesor> Instructores
+        {
+            get
+            {
+                return this.profesores;
+            }
+            set
+            {
+                this.profesores = value;
+            }
+        }
+        public List<Jornada> Jornadas
+        {
+            get
+            {
+                return this.jornada;
+            }
+            set
+            {
+                this.jornada = value;
+            }
+        }
+        public Jornada this[int indice]
+        {
+            get
+            {
+                if (indice >= this.jornada.Count || indice < 0)
+                    return null;
+                else
+                    return this.jornada[indice];
+            }
+            set
+            {
+                if (indice >= 0 && indice < this.jornada.Count)
+                {
+                    this.jornada[indice] = value;
+                }
+            }
+        }
+        #endregion
         #region constructores
         public Universidad()
         {
@@ -81,9 +132,8 @@ namespace Clases_Instanciables
         public static bool operator ==(Universidad g,Profesor p)
         {
             bool rta = false;
-            foreach (Profesor aux in g.profesores)
-                if (g.profesores.Contains(aux))
-                    rta = true;
+            if (g.profesores.Contains(p))
+                rta = true;
             return rta;
         }
         public static bool operator !=(Universidad g, Profesor p)
@@ -92,13 +142,13 @@ namespace Clases_Instanciables
         }
         public static Profesor operator ==(Universidad g, EClases clase)
         {
-            bool rta = false;
-            foreach (Profesor retorno in g.profesores)
-                if (retorno == clase)
-                    rta = true;
-            if (!(rta))
+            Profesor retorno = null; ;
+            foreach (Profesor aux in g.profesores)
+                if (aux == clase)
+                    retorno = aux;
+            if (retorno == null)
                 throw new SinProfesorException();
-            return rta;
+            return retorno;
         }
         public static Profesor operator !=(Universidad g, EClases clase)
         {
@@ -110,7 +160,24 @@ namespace Clases_Instanciables
         }
         public static Universidad operator +(Universidad g, EClases clase)
         {
+            List<Alumno> alumnoAux = new List<Alumno>();
+            foreach(Profesor aux in g.profesores)
+            {
+                if (aux == clase)
+                {
+                    g.jornada.Add(new Jornada(clase, aux));
+                    break;
+                }
+                else
+                    throw new SinProfesorException();
+            }
+            foreach(Alumno aux in g.Alumnos)
+            {
+                if (aux == clase)
+                    alumnoAux.Add(aux);
+            }
 
+            return g;
         }
         public static Universidad operator -(Universidad g, EClases clase)
         {
@@ -118,19 +185,27 @@ namespace Clases_Instanciables
         }
         public static Universidad operator +(Universidad g, Alumno a)
         {
-
+            if (!(g == a))
+                g.alumnos.Add(a);
+            return g;
         }
         public static Universidad operator -(Universidad g, Alumno a)
         {
-
+            if (g == a)
+                g.alumnos.Remove(a);
+            return g;
         }
         public static Universidad operator +(Universidad g, Profesor p)
         {
-
+            if (g != p)
+                g.profesores.Add(p);
+            return g;
         }
         public static Universidad operator -(Universidad g, Profesor p)
         {
-
+            if (g == p)
+                g.profesores.Remove(p);
+            return g;
         }
         #endregion
     }
