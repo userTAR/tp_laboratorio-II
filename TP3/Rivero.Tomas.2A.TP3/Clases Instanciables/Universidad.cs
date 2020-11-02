@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Excepciones;
+using Archivos;
 
 namespace Clases_Instanciables
 {
@@ -14,6 +15,7 @@ namespace Clases_Instanciables
         private List<Jornada> jornada;
         private List<Profesor> profesores;
         #endregion
+
         #region enumerados
         public enum EClases
         {
@@ -23,6 +25,7 @@ namespace Clases_Instanciables
             SPD
         }
         #endregion
+
         #region propiedades
         public List<Alumno> Alumnos
         {
@@ -75,6 +78,7 @@ namespace Clases_Instanciables
             }
         }
         #endregion
+
         #region constructores
         public Universidad()
         {
@@ -85,13 +89,27 @@ namespace Clases_Instanciables
         #endregion
 
         #region metodos
-        public bool Guardar(Universidad uni)
+        public static bool Guardar(Universidad uni)
         {
+            bool retorno = false;
 
+           Texto universidadTxt = new Texto();
+            retorno = universidadTxt.Guardar("jornadaXml.xml", uni.ToString());
+            if (!retorno)
+                throw new ArchivosException();
+            return retorno;
         }
-        public Universidad Leer()
+        public static Universidad Leer()
         {
+            bool retorno;
+            string datos;
 
+            Texto universidadTxt = new Texto();
+            retorno = universidadTxt.Leer("jornadaXml.xml", out datos);
+            if (retorno)
+                return datos;// seguir acá
+            else
+                throw new ArchivosException();
         }
         private static string MostrarDatos(Universidad uni)
         {

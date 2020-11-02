@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Archivos;
+using Excepciones;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,11 +67,25 @@ namespace Clases_Instanciables
         #region metodos
         public static bool Guardar(Jornada jornada)
         {
+            bool retorno = false;
 
+            Xml<Jornada> jornadaXml = new Xml<Jornada>();
+            retorno = jornadaXml.Guardar("jornadaXml.xml", jornada);
+            if (!retorno)
+                throw new ArchivosException();
+            return retorno;
         }
         public string Leer()
         {
+            bool retorno;
+            Jornada datos;
 
+            Xml<Jornada> jornadaAux = new Xml<Jornada>();
+            retorno = jornadaAux.Leer("jornadaXml.xml", out datos);
+            if (retorno)
+                return datos.ToString();
+            else
+                throw new ArchivosException();
         }
         #endregion
 

@@ -24,8 +24,9 @@ namespace Archivos
         public bool Leer(string archivo, out string datos)
         {
             bool rta = false;
-            using (StreamReader sr = new StreamReader(archivo)
+            using (StreamReader sr = new StreamReader(archivo))
             {
+                datos = sr.ReadToEnd();
                 rta = true;
             }
 
