@@ -69,8 +69,8 @@ namespace Clases_Instanciables
         {
             bool retorno = false;
 
-            Xml<Jornada> jornadaXml = new Xml<Jornada>();
-            retorno = jornadaXml.Guardar("jornadaXml.xml", jornada);
+            Texto jornadaXml = new Texto();
+            retorno = jornadaXml.Guardar("jornadaXml.xml", jornada.ToString());
             if (!retorno)
                 throw new ArchivosException();
             return retorno;
@@ -78,12 +78,12 @@ namespace Clases_Instanciables
         public string Leer()
         {
             bool retorno;
-            Jornada datos;
+            string datos;
 
-            Xml<Jornada> jornadaAux = new Xml<Jornada>();
+            Texto jornadaAux = new Texto();
             retorno = jornadaAux.Leer("jornadaXml.xml", out datos);
             if (retorno)
-                return datos.ToString();
+                return datos;
             else
                 throw new ArchivosException();
         }

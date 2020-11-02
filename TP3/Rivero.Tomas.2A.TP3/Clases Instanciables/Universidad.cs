@@ -93,8 +93,8 @@ namespace Clases_Instanciables
         {
             bool retorno = false;
 
-           Texto universidadTxt = new Texto();
-            retorno = universidadTxt.Guardar("jornadaXml.xml", uni.ToString());
+            Xml<Universidad> universidadXml = new Xml<Universidad>();
+            retorno = universidadXml.Guardar("universidadXml.xml", uni);
             if (!retorno)
                 throw new ArchivosException();
             return retorno;
@@ -102,12 +102,12 @@ namespace Clases_Instanciables
         public static Universidad Leer()
         {
             bool retorno;
-            string datos;
+            Universidad datos;
 
-            Texto universidadTxt = new Texto();
-            retorno = universidadTxt.Leer("jornadaXml.xml", out datos);
+            Xml<Universidad> universidadXml = new Xml<Universidad>();
+            retorno = universidadXml.Leer("universidadXml.xml", out datos);
             if (retorno)
-                return datos;// seguir acá
+                return datos;
             else
                 throw new ArchivosException();
         }
