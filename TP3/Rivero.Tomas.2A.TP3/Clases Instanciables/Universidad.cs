@@ -138,9 +138,8 @@ namespace Clases_Instanciables
         public static bool operator ==(Universidad g, Alumno a)
         {
             bool rta = false;
-            foreach (Alumno aux in g.alumnos)
-                if (g.alumnos.Contains(aux))
-                    rta = true;
+            if (g.alumnos.Contains(a))
+                rta = true;
             return rta;
         }
         public static bool operator !=(Universidad g, Alumno a)
@@ -202,10 +201,11 @@ namespace Clases_Instanciables
         }
         public static Universidad operator +(Universidad g, Alumno a)
         {
-            if (!(g == a))
+            if (g != a)
                 g.alumnos.Add(a);
             else
                 throw new AlumnoRepetidoException();
+
             return g;
         }
         public static Universidad operator +(Universidad g, Profesor p)

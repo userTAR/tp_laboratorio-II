@@ -31,7 +31,7 @@ namespace Clases_abstractas
             get { return this.apellido; }
             set 
             { 
-                if(ValidarNombreApellido(this.apellido)!=null)
+                if(ValidarNombreApellido(value)!=null)
                     this.apellido = value; 
             }
         }
@@ -50,7 +50,7 @@ namespace Clases_abstractas
             get { return this.nombre; }
             set 
             { 
-                if(ValidarNombreApellido(this.nombre)!=null)
+                if(ValidarNombreApellido(value)!=null)
                     this.nombre = value; 
             }
         }
@@ -118,11 +118,10 @@ namespace Clases_abstractas
             
             return datoParseado;
         }
-        private string ValidarNombreApellido(string dato)
+        private string ValidarNombreApellido(string dato) //excepcion aca
         {
             string ret;
-            Regex reg = new Regex("^[a - zA - Z] +$");
-            if (reg.IsMatch(dato))
+            if (dato != null && Regex.IsMatch(dato, @"^[\p{L}]+$") == true) //no entra nunca. verificar
                 ret = dato;
             else
                 ret = null;
