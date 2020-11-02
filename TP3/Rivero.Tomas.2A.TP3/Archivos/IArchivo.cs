@@ -8,6 +8,9 @@ namespace Archivos
 {
     public interface IArchivo<T>
     {
-
+        #region metodos
+        bool Guardar(string archivo, T datos);
+        bool Leer(string archivo, out T datos);
+        #endregion
     }
 }
