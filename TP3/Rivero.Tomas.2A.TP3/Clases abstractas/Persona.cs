@@ -38,7 +38,7 @@ namespace Clases_abstractas
         public int DNI
         {
             get { return this.dni; }
-            set { this.dni = value; }
+            set { this.dni = this.ValidarDni(this.Nacionalidad,value); }
         }
         public ENacionalidad Nacionalidad
         {
@@ -56,7 +56,7 @@ namespace Clases_abstractas
         }
         public string StringToDNI
         {
-            set { this.dni = Convert.ToInt32(value); }
+            set { this.dni = this.ValidarDni(this.Nacionalidad, Convert.ToInt32(value)); }
         }
         #endregion
 
@@ -65,7 +65,7 @@ namespace Clases_abstractas
         {
             this.Nombre = default;
             this.Apellido = default;
-            this.DNI = -1;
+            this.DNI = default;
         }
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad) : this()
         {
@@ -86,22 +86,26 @@ namespace Clases_abstractas
         #region metodos
         private int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
-            int ret = dato;
+            if (/*Regex.IsMatch(dato.ToString(), @"^[\p{L}]+$") == true ||*/ (dato.ToString().Length > 0 && dato.ToString().Length < 9)) // rompe acá
+
+            {
+                throw new DniInvalidoException();
+            }
             switch (nacionalidad)
             {
-                case ENacionalidad.Argentino:
-                    if (dato < 1 && dato > 89999999)
-                        throw new DniInvalidoException("El DNI argentino no es correcto");
-                    break;
                 case ENacionalidad.Extranjero:
+                    if (dato < 1 && dato > 89999999)
+                        throw new NacionalidadInvalidaException("El DNI no condice con la nacionalidad");
+                    break;
+                case ENacionalidad.Argentino:
                     if (dato < 90000000 && dato > 99999999)
-                        throw new DniInvalidoException("El DNI extranjero no es correcto");
+                        throw new NacionalidadInvalidaException("El DNI no condice con la nacionalidad");
                     break;
                 default:
                     throw new NacionalidadInvalidaException();
                     
             }
-            return ret;
+            return dato;
         }
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {

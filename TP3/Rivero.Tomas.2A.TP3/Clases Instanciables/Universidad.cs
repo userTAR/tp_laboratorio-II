@@ -178,7 +178,6 @@ namespace Clases_Instanciables
         public static Universidad operator +(Universidad g, EClases clase)
         {
             bool flag = false;
-            //List<Alumno> alumnoAux = new List<Alumno>();
             foreach(Profesor profesorAux in g.profesores)
             {
                 if (profesorAux == clase)

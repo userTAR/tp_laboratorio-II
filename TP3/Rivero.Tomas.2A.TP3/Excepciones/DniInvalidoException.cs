@@ -8,11 +8,11 @@ namespace Excepciones
 {
     public class DniInvalidoException : Exception
     {
-        public DniInvalidoException() : base("El número de DNI no es válido")
+        public DniInvalidoException() : base("El formato del DNI no es válido")
         {
 
         }
-        public DniInvalidoException(Exception innerException) : base("El número de DNI no es válido", innerException)
+        public DniInvalidoException(Exception innerException) : base("El formato del DNI no es válido", innerException)
         {
 
         }
