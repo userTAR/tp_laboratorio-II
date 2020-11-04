@@ -53,10 +53,18 @@ namespace Clases_Instanciables
         #endregion
 
         #region constructores
+        /// <summary>
+        /// Constructor privado que instancia la lista
+        /// </summary>
         private Jornada()
         {
             alumnos = new List<Alumno>();
         }
+        /// <summary>
+        /// Constructor con clase y el profesor que la da
+        /// </summary>
+        /// <param name="clase"></param>
+        /// <param name="instructor"></param>
         public Jornada(Universidad.EClases clase, Profesor instructor) : this()
         {
             this.Clase = clase;
@@ -65,6 +73,11 @@ namespace Clases_Instanciables
         #endregion
 
         #region metodos
+        /// <summary>
+        /// Guarda la jornada en un archivo de texto
+        /// </summary>
+        /// <param name="jornada"></param>
+        /// <returns>True si está correcto, si no, lanza excepción correspondiente</returns>
         public static bool Guardar(Jornada jornada)
         {
             bool retorno = false;
@@ -75,6 +88,10 @@ namespace Clases_Instanciables
                 throw new ArchivosException();
             return retorno;
         }
+        /// <summary>
+        /// Lee una jornada de un archivo de texto
+        /// </summary>
+        /// <returns>True si está correcto, si no, lanza excepción correspondiente</returns>
         public string Leer()
         {
             bool retorno;
@@ -90,6 +107,12 @@ namespace Clases_Instanciables
         #endregion
 
         #region sobrecargas
+        /// <summary>
+        /// Jornada es igual a Alumno si el alumno pertenece a la jornada
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns>True si lo contiene, si no, False</returns>
         public static bool operator ==(Jornada j, Alumno a)
         {
             bool retorno = false;
@@ -101,12 +124,22 @@ namespace Clases_Instanciables
         {
             return (!(j == a));
         }
+        /// <summary>
+        /// Agrega un alumno a una jornada, si este no está previamente en la jornada
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns>La jornada</returns>
         public static Jornada operator +(Jornada j, Alumno a)
         {
             if (j != a)
                 j.alumnos.Add(a);
             return j;
         }
+        /// <summary>
+        /// Concatena todos los datos de la jornada
+        /// </summary>
+        /// <returns>Los datos de la jornada</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();

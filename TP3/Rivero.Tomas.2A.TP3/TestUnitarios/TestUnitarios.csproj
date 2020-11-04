@@ -56,6 +56,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Archivos\Archivos.csproj">
+      <Project>{2d46abfc-51b7-4bd1-93cd-3f5f6a84658d}</Project>
+      <Name>Archivos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Clases abstractas\Clases abstractas.csproj">
       <Project>{a3c089db-b5dd-4f47-9b86-5cdadbf3c001}</Project>
       <Name>Clases abstractas</Name>

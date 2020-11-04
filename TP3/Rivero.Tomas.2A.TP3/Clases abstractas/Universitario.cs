@@ -13,16 +13,32 @@ namespace Clases_abstractas
         #endregion
 
         #region constructor
+        /// <summary>
+        /// Constructor por default 
+        /// </summary>
         public Universitario() : base()
         {
             this.legajo = -1;
         }
+        /// <summary>
+        /// Constructor con legajo, nombre, apellido, dni (STRING), nacionalidad
+        /// </summary>
+        /// <param name="legajo"></param>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Universitario(int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad) : base(nombre, apellido, dni, nacionalidad)
         {
             this.legajo = legajo;
         }
         #endregion
+
         #region metodos
+        /// <summary>
+        /// Muestra los datos del universitario
+        /// </summary>
+        /// <returns>Los datos del universitario</returns>
         protected virtual string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -38,6 +54,12 @@ namespace Clases_abstractas
         {
             return (!(pg1 == pg2));
         }
+        /// <summary>
+        /// 2 Universitarios son iguales si tienen el mismo DNI o el mismo legajo
+        /// </summary>
+        /// <param name="pg1"></param>
+        /// <param name="pg2"></param>
+        /// <returns></returns>
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
             bool rta = false;

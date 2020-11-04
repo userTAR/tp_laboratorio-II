@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Clases_Instanciables;
 using Excepciones;
+using Archivos;
 
 namespace TestUnitarios
 {
@@ -61,14 +62,6 @@ namespace TestUnitarios
             //assert
             Assert.IsTrue(check);
         }
-        //[TestMethod]
-        //public void TestArchivosException()
-        //{
-        //    //arrange
-        //    bool check = false;
-        //    //act
-        //    //assert
-        //}
         [TestMethod]
         public void TestDniInvalidoException() //DniInvalidException es para errores de FORMATO
         {
@@ -96,7 +89,7 @@ namespace TestUnitarios
             //act
             try
             {
-                Alumno a2 = new Alumno(2, "Juana", "Martinez", "100000000000000",
+                Alumno a2 = new Alumno(2, "Juana", "Martinez", "100000000",
                    Clases_abstractas.Persona.ENacionalidad.Extranjero, Universidad.EClases.Laboratorio,
                    Alumno.EEstadoCuenta.Deudor);
             }
@@ -168,5 +161,25 @@ namespace TestUnitarios
             //assert
             Assert.IsTrue(check);
         }
+        [TestMethod]
+        public void TestArchivosException()
+        {
+            //arrange
+            bool check = false;
+            //act
+            try
+            {
+                Xml<int> xml = new Xml<int>();
+                xml.Guardar(@"C:\Tomate", 4);
+            }
+            catch (ArchivosException e)
+            {
+                check = true;
+            }
+
+            //assert
+            Assert.IsTrue(check);
+        }
+        
     }
 }
