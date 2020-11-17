@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Class1
+    public interface Interfaz
     {
+        string MostrarInformacion();
+        string ImprimirTotal();
     }
 }
