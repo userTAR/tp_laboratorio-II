@@ -21,7 +21,7 @@ namespace Entidades
         #endregion
 
         #region metodos
-        private string MostrarInformacion()
+        public string MostrarInformacion()
         {
             StringBuilder sb = new StringBuilder();
             foreach(T elemento in this.Lista)

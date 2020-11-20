@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace FormPrincipal
 {
-    public partial class Form1 : Form
+    public partial class frmSelectAeronave : Form
     {
-        public Form1()
+        public frmSelectAeronave()
         {
             InitializeComponent();
+        }
+
+        public int DevComboBox()
+        {
+            int retorno;
+            retorno = this.cbSeleccion.SelectedIndex;
+            return retorno;
         }
     }
 }
