@@ -79,9 +79,9 @@ namespace Entidades
         /// <param name="autonomia"></param>
         /// <param name="envergadura"></param>
         /// <param name="numeroSerie"></param>
-        public Avion(string marca, string modelo, int velocidadCrucero, int velocidadDePerdida,long numeroSerie, EPaso tipoDePaso, int autonomia, double envergadura) : base(marca, modelo, velocidadCrucero, numeroSerie)
+        public Avion(string marca, string modelo, int velocidadCrucero, int velocidadDePerdida,double precio, double numeroSerie, EPaso tipoDePaso, int autonomia, double envergadura) : base(marca, modelo, velocidadCrucero, precio, numeroSerie)
         {
-            this.VelocidadDePerdida = velocidadPerdida;
+            this.VelocidadDePerdida = velocidadDePerdida;
             this.TipoDePaso = tipoDePaso;
             this.Autonomia = autonomia;
             this.Envergadura = envergadura;

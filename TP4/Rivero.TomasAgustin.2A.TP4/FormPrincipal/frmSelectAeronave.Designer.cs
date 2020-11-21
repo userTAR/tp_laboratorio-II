@@ -32,6 +32,7 @@ namespace FormPrincipal
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSelectAeronave));
             this.label1 = new System.Windows.Forms.Label();
             this.cbSeleccion = new System.Windows.Forms.ComboBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,17 +54,29 @@ namespace FormPrincipal
             "Avión",
             "Helicoptero",
             "Planeador"});
-            this.cbSeleccion.Location = new System.Drawing.Point(247, 119);
+            this.cbSeleccion.Location = new System.Drawing.Point(229, 128);
             this.cbSeleccion.Name = "cbSeleccion";
             this.cbSeleccion.Size = new System.Drawing.Size(142, 28);
             this.cbSeleccion.TabIndex = 1;
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(501, 296);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(94, 38);
+            this.btnAceptar.TabIndex = 2;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // frmSelectAeronave
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FormPrincipal.Properties.Resources.PucaraMalvinas;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(631, 346);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.cbSeleccion);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -82,5 +95,6 @@ namespace FormPrincipal
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbSeleccion;
+        private System.Windows.Forms.Button btnAceptar;
     }
 }

@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAvion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvion.Designer.cs">
+      <DependentUpon>frmAvion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelicoptero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelicoptero.Designer.cs">
+      <DependentUpon>frmHelicoptero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlaneador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlaneador.Designer.cs">
+      <DependentUpon>frmPlaneador.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSelectAeronave.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +78,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAvion.resx">
+      <DependentUpon>frmAvion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelicoptero.resx">
+      <DependentUpon>frmHelicoptero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlaneador.resx">
+      <DependentUpon>frmPlaneador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +133,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PucaraMalvinas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20191110_175739.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20191110_185628.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20190928_180618.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20190928_180617.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20190928_180608.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

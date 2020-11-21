@@ -12,16 +12,20 @@ namespace FormPrincipal
 {
     public partial class frmSelectAeronave : Form
     {
+        public int eleccion;
         public frmSelectAeronave()
         {
             InitializeComponent();
+            this.DialogResult = DialogResult.None;
         }
 
-        public int DevComboBox()
+        
+
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
-            int retorno;
-            retorno = this.cbSeleccion.SelectedIndex;
-            return retorno;
+            this.DialogResult = DialogResult.OK;
+            this.eleccion = this.cbSeleccion.SelectedIndex;
+            this.Close();
         }
     }
 }

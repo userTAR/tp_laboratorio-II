@@ -36,12 +36,11 @@ namespace FormPrincipal
             this.btnVendidos = new System.Windows.Forms.Button();
             this.btnBBDD = new System.Windows.Forms.Button();
             this.btnVender = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(12, 572);
+            this.btnAgregar.Location = new System.Drawing.Point(37, 567);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(99, 59);
             this.btnAgregar.TabIndex = 0;
@@ -51,57 +50,53 @@ namespace FormPrincipal
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(150, 572);
+            this.btnEliminar.Location = new System.Drawing.Point(222, 567);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(97, 59);
             this.btnEliminar.TabIndex = 1;
             this.btnEliminar.Text = "Eliminar Aeronave";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(295, 572);
+            this.btnModificar.Location = new System.Drawing.Point(403, 567);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(99, 59);
             this.btnModificar.TabIndex = 2;
             this.btnModificar.Text = "Modificar Aeronave";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnVendidos
             // 
-            this.btnVendidos.Location = new System.Drawing.Point(599, 562);
+            this.btnVendidos.Location = new System.Drawing.Point(747, 562);
             this.btnVendidos.Name = "btnVendidos";
             this.btnVendidos.Size = new System.Drawing.Size(94, 69);
             this.btnVendidos.TabIndex = 3;
             this.btnVendidos.Text = "Visualizar Vendidos";
             this.btnVendidos.UseVisualStyleBackColor = true;
+            this.btnVendidos.Click += new System.EventHandler(this.btnVendidos_Click);
             // 
             // btnBBDD
             // 
-            this.btnBBDD.Location = new System.Drawing.Point(767, 562);
+            this.btnBBDD.Location = new System.Drawing.Point(908, 562);
             this.btnBBDD.Name = "btnBBDD";
-            this.btnBBDD.Size = new System.Drawing.Size(87, 69);
+            this.btnBBDD.Size = new System.Drawing.Size(99, 69);
             this.btnBBDD.TabIndex = 4;
-            this.btnBBDD.Text = "Visualizar Base De Datos";
+            this.btnBBDD.Text = "Visualizar Aeronaves";
             this.btnBBDD.UseVisualStyleBackColor = true;
+            this.btnBBDD.Click += new System.EventHandler(this.btnBBDD_Click);
             // 
             // btnVender
             // 
-            this.btnVender.Location = new System.Drawing.Point(443, 562);
+            this.btnVender.Location = new System.Drawing.Point(582, 562);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(87, 69);
             this.btnVender.TabIndex = 5;
             this.btnVender.Text = "Vender Una Aeronave";
             this.btnVender.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(911, 551);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 96);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Visualizar Todas Las Aeronaves";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
             // 
             // frmPrincipal
             // 
@@ -109,8 +104,8 @@ namespace FormPrincipal
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FormPrincipal.Properties.Resources._738_puntoDeEspera;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1019, 685);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVender);
             this.Controls.Add(this.btnBBDD);
             this.Controls.Add(this.btnVendidos);
@@ -134,7 +129,6 @@ namespace FormPrincipal
         private System.Windows.Forms.Button btnVendidos;
         private System.Windows.Forms.Button btnBBDD;
         private System.Windows.Forms.Button btnVender;
-        private System.Windows.Forms.Button button1;
     }
 }
 

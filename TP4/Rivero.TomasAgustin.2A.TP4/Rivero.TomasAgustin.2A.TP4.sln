@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30709.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{EAB9B5D0-78F0-4C6C-BBE4-C90D2BCADFF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormPrincipal", "FormPrincipal\FormPrincipal.csproj", "{CF261CE6-98EE-4F5A-B8CE-B2BE27C35128}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formularios", "FormPrincipal\Formularios.csproj", "{CF261CE6-98EE-4F5A-B8CE-B2BE27C35128}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\Excepciones.csproj", "{312829C2-EC89-48B0-8B65-1BCFF33CF5EA}"
 EndProject

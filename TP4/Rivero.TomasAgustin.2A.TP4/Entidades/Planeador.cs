@@ -47,7 +47,7 @@ namespace Entidades
         /// <param name="velocidadCrucero"></param>
         /// <param name="numeroSerie"></param>
         /// <param name="envergadura"></param>
-        public Planeador(string marca, string modelo, int velocidadCrucero, long numeroSerie, double envergadura) : base(marca, modelo, velocidadCrucero, numeroSerie)
+        public Planeador(string marca, string modelo, int velocidadCrucero, double precio, double numeroSerie, double envergadura) : base(marca, modelo, velocidadCrucero, precio, numeroSerie)
         {
             this.Envergadura = envergadura;
         }

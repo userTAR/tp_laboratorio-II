@@ -12,7 +12,7 @@ namespace Entidades
         #region atributos
         private string marca;
         private string modelo;
-        private long numeroDeSerie;
+        private double numeroDeSerie;
         private int velocidadCrucero;
         private double precio;
         #endregion
@@ -59,7 +59,7 @@ namespace Entidades
                     throw new VelocidadException("La velocidad crucero no puede ser igual o menor que 0 nudos");
             }
         }
-        public long NumeroDeSerie
+        public double NumeroDeSerie
         {
             get { return this.numeroDeSerie; }
             set { this.numeroDeSerie = value; }
@@ -93,12 +93,13 @@ namespace Entidades
         /// <param name="modelo"></param>
         /// <param name="velocidad"></param>
         /// <param name="numeroSerie"></param>
-        public Aeronave(string marca, string modelo, int velocidad, long numeroSerie)
+        public Aeronave(string marca, string modelo, int velocidad, double precio, double numeroSerie)
         {
             this.Marca = marca;
             this.Modelo= modelo;
             this.VelocidadCrucero= velocidad;
-            this.NumeroDeSerie = numeroDeSerie;
+            this.NumeroDeSerie = numeroSerie;
+            this.Precio = precio;
         }
         #endregion
 

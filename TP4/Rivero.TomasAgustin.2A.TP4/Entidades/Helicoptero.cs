@@ -9,7 +9,7 @@ namespace Entidades
 {
     public class Helicoptero : Aeronave
     {
-        #region
+        #region atributos
         private int cantidadPalas;
         private double techoOperativo;
         #endregion
@@ -62,7 +62,7 @@ namespace Entidades
         /// <param name="cantidadDePalas"></param>
         /// <param name="techoOperativo"></param>
         /// <param name="numeroSerie"></param>
-        public Helicoptero(string marca, string modelo, int velocidadCrucero, long numeroSerie, int cantidadDePalas, double techoOperativo) : base(marca, modelo, velocidadCrucero, numeroSerie)
+        public Helicoptero(string marca, string modelo, int velocidadCrucero, double precio, double numeroSerie, int cantidadDePalas, double techoOperativo) : base(marca, modelo, velocidadCrucero, precio, numeroSerie)
         {
             this.CantidadDePalas = cantidadDePalas;
             this.TechoOperativo = techoOperativo;
