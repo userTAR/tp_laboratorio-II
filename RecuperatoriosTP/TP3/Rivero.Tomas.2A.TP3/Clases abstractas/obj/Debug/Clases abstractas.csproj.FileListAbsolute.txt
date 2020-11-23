@@ -7,3 +7,12 @@ C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laborat
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\obj\Debug\Clases abstractas.csproj.CopyComplete
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\obj\Debug\Clases abstractas.dll
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\obj\Debug\Clases abstractas.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\bin\Debug\Clases abstractas.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\bin\Debug\Clases abstractas.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\bin\Debug\Excepciones.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\bin\Debug\Excepciones.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\obj\Debug\Clases abstractas.csprojAssemblyReference.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\obj\Debug\Clases abstractas.csproj.CoreCompileInputs.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\obj\Debug\Clases abstractas.csproj.CopyComplete
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\obj\Debug\Clases abstractas.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Clases abstractas\obj\Debug\Clases abstractas.pdb

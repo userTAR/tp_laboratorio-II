@@ -4,3 +4,9 @@ C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laborat
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Excepciones\obj\Debug\Excepciones.dll
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Excepciones\obj\Debug\Excepciones.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Excepciones\obj\Debug\Excepciones.pdb

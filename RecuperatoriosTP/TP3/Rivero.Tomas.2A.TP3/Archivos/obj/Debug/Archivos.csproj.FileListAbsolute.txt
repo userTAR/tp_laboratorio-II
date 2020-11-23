@@ -7,3 +7,12 @@ C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laborat
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Archivos\bin\Debug\Excepciones.dll
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Archivos\bin\Debug\Excepciones.pdb
 C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Archivos\bin\Debug\Excepciones.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP3\Rivero.Tomas.2A.TP3\Archivos\obj\Debug\Archivos.pdb

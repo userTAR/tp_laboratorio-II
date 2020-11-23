@@ -14,14 +14,14 @@ namespace Archivos
         /// </summary>
         /// <param name="archivo"></param>
         /// <param name="datos"></param>
-        /// <returns></returns>
+        /// <returns>True si se pudo guardar, si no: False</returns>
         bool Guardar(string archivo, T datos);
         /// <summary>
         /// Función leer de interfaz
         /// </summary>
         /// <param name="archivo"></param>
         /// <param name="datos"></param>
-        /// <returns></returns>
+        /// <returns>True si se pudo guardar, si no: False</returns>
         bool Leer(string archivo, out T datos);
         #endregion
     }

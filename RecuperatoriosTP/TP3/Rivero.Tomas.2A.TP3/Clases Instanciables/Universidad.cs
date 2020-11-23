@@ -130,6 +130,7 @@ namespace Clases_Instanciables
         }
 
         #endregion
+
         #region sobrecargas
         public override string ToString()
         {

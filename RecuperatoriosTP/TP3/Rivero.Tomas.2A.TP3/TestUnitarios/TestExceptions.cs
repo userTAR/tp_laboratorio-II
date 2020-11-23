@@ -180,6 +180,15 @@ namespace TestUnitarios
             //assert
             Assert.IsTrue(check);
         }
-        
+        [TestMethod]
+        public void TestUniversidad()
+        {
+            Universidad universidad = new Universidad();
+
+            Assert.IsNotNull(universidad.Alumnos);
+            Assert.IsNotNull(universidad.Instructores);
+            Assert.IsNotNull(universidad.Jornadas);
+
+        }
     }
 }
