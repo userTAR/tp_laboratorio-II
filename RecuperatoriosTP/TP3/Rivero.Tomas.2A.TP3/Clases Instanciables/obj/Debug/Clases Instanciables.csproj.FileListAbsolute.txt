@@ -1,0 +1,13 @@
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\bin\Debug\Clases Instanciables.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\bin\Debug\Clases Instanciables.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\bin\Debug\Archivos.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\bin\Debug\Clases abstractas.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\bin\Debug\Excepciones.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\bin\Debug\Archivos.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\bin\Debug\Clases abstractas.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\bin\Debug\Excepciones.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csprojAssemblyReference.cache
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.pdb

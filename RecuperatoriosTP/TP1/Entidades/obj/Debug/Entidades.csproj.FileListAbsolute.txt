@@ -1,0 +1,11 @@
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tomas-TP1\Entidades\bin\Debug\Entidades.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tomas-TP1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tomas-TP1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tomas-TP1\Entidades\obj\Debug\Entidades.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\Rivero.Tomas-TP1\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP1\Entidades\bin\Debug\Entidades.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP1\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP1\Entidades\obj\Debug\Entidades.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP1\Entidades\obj\Debug\Entidades.pdb

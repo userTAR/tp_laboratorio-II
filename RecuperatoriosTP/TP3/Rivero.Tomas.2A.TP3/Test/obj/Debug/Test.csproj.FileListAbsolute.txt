@@ -1,0 +1,16 @@
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Test.exe.config
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Test.exe
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Test.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Clases abstractas.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Clases Instanciables.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Excepciones.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Archivos.dll
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Clases abstractas.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Clases Instanciables.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Excepciones.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\bin\Debug\Archivos.pdb
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\obj\Debug\Test.exe
+C:\Users\Familia Rivero\Desktop\Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP3\Rivero.Tomas.2A.TP3\Test\obj\Debug\Test.pdb
