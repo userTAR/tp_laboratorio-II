@@ -264,6 +264,7 @@ namespace FormPrincipal
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.textBoxMarca);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmHelicoptero";

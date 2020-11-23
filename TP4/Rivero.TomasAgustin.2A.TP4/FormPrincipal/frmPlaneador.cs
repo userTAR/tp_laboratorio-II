@@ -13,10 +13,20 @@ namespace FormPrincipal
 {
     public partial class frmPlaneador : Form
     {
-        public Planeador retorno;
+        public Planeador retorno = null;
         public frmPlaneador()
         {
             InitializeComponent();
+        }
+        public frmPlaneador(Planeador planeador)
+        {
+            InitializeComponent();
+            this.textBoxMarca.Text = planeador.Marca;
+            this.textBoxModelo.Text = planeador.Modelo;
+            this.textBoxPrecio.Text = planeador.Precio.ToString();
+            this.textBoxNumSerie.Text = planeador.NumeroDeSerie.ToString();
+            this.textBoxVelCrucero.Text = planeador.VelocidadCrucero.ToString();
+            this.textBoxEnvergadura.Text = planeador.Envergadura.ToString();
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -35,12 +45,15 @@ namespace FormPrincipal
                 numeroSerie = double.Parse(this.textBoxNumSerie.Text);
                 velCrucero = int.Parse(this.textBoxVelCrucero.Text);
                 envergadura = double.Parse(this.textBoxEnvergadura.Text);
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+                retorno = new Planeador(marca, modelo, velCrucero, precio, numeroSerie, envergadura);
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            retorno = new Planeador(marca, modelo, velCrucero, precio, numeroSerie, envergadura);
+            
         }
     }
 }

@@ -13,13 +13,26 @@ namespace FormPrincipal
 {
     public partial class frmAvion : Form
     {
-        public Avion retorno;
+        public Avion retorno = null;
         public frmAvion()
         {
             InitializeComponent();
         }
+        public frmAvion(Avion avion)
+        {
+            InitializeComponent();
+            this.textBoxMarca.Text = avion.Marca;
+            this.textBoxModelo.Text = avion.Modelo;
+            this.textBoxAutonomia.Text = avion.Autonomia.ToString();
+            this.textBoxVelPerdida.Text = avion.VelocidadDePerdida.ToString();
+            this.textBoxEnvergadura.Text = avion.Envergadura.ToString();
+            //this.cbTipoPaso.SelectedIndex = avion.;
+            this.textBoxPrecio.Text = avion.Precio.ToString();
+            this.textBoxNumSerie.Text = avion.NumeroDeSerie.ToString();
+            this.textBoxVelCrucero.Text = avion.VelocidadCrucero.ToString();
+        }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        private void btnAceptar_Click_1(object sender, EventArgs e)
         {
             string marca = null;
             string modelo = null;
@@ -41,12 +54,15 @@ namespace FormPrincipal
                 precio = double.Parse(this.textBoxPrecio.Text);
                 numeroSerie = double.Parse(this.textBoxNumSerie.Text);
                 velCrucero = int.Parse(this.textBoxVelCrucero.Text);
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+                retorno = new Avion(marca, modelo, velCrucero, Vs, precio, numeroSerie, paso, autonomia, envergadura);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            Avion retorno = new Avion(marca,modelo,velCrucero,Vs,numeroSerie,paso,autonomia,envergadura);
+
         }
     }
 }

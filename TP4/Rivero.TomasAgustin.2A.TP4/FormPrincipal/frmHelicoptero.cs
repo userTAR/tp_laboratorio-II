@@ -13,10 +13,21 @@ namespace FormPrincipal
 {
     public partial class frmHelicoptero : Form
     {
-        public Helicoptero retorno;
+        public Helicoptero retorno = null;
         public frmHelicoptero()
         {
             InitializeComponent();
+        }
+        public frmHelicoptero(Helicoptero helicop)
+        {
+            InitializeComponent();
+            this.textBoxMarca.Text = helicop.Marca;
+            this.textBoxModelo.Text = helicop.Modelo;
+            this.textBoxPrecio.Text = helicop.Precio.ToString();
+            this.textBoxNumSerie.Text = helicop.NumeroDeSerie.ToString();
+            this.textBoxVelCrucero.Text = helicop.VelocidadCrucero.ToString();
+            //this.numericCantPalas = helicop.CantidadDePalas;
+            //this.numericTechoOperativo = helicop.TechoOperativo;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -37,12 +48,15 @@ namespace FormPrincipal
                 velCrucero = int.Parse(this.textBoxVelCrucero.Text);
                 cantidadPalas = int.Parse(this.numericCantPalas.Value.ToString());
                 techoOperativo = double.Parse(this.numericTechoOperativo.Value.ToString());
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+                retorno = new Helicoptero(marca, modelo, velCrucero, precio, numeroSerie, cantidadPalas, techoOperativo);
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            retorno = new Helicoptero(marca, modelo, velCrucero, numeroSerie, cantidadPalas, techoOperativo);
+            
         }
     }
 }

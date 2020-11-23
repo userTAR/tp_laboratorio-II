@@ -154,6 +154,7 @@ namespace FormPrincipal
             this.btnAceptar.TabIndex = 12;
             this.btnAceptar.Text = "Ingresar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click_1);
             // 
             // lblAdvertencia
             // 
