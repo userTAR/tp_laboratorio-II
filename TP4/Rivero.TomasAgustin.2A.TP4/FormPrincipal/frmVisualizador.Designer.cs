@@ -63,6 +63,7 @@ namespace FormPrincipal
             this.ClientSize = new System.Drawing.Size(1171, 542);
             this.Controls.Add(this.dgvGrilla);
             this.Controls.Add(this.btnAceptar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmVisualizador";
             this.Text = "Visualizador";

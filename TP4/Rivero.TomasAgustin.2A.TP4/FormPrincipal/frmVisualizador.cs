@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 
 namespace FormPrincipal
 {
@@ -65,5 +66,7 @@ namespace FormPrincipal
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        
     }
 }

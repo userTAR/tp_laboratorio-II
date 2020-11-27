@@ -92,7 +92,7 @@ namespace FormPrincipal
             // 
             this.btnVender.Location = new System.Drawing.Point(582, 562);
             this.btnVender.Name = "btnVender";
-            this.btnVender.Size = new System.Drawing.Size(87, 69);
+            this.btnVender.Size = new System.Drawing.Size(92, 74);
             this.btnVender.TabIndex = 5;
             this.btnVender.Text = "Vender Una Aeronave";
             this.btnVender.UseVisualStyleBackColor = true;
@@ -112,6 +112,7 @@ namespace FormPrincipal
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";

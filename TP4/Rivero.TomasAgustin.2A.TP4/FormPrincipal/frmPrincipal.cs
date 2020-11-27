@@ -126,7 +126,6 @@ namespace FormPrincipal
             
         }
         
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             
@@ -143,7 +142,6 @@ namespace FormPrincipal
                             MessageBox.Show("ERROR AL CONFIGURAR EL DATAADAPTER!!!");
                             this.Close();
                         }
-
                         try
                         {
                             this.ConfigurarDataTableAvion();
@@ -297,7 +295,6 @@ namespace FormPrincipal
                         }
                         catch (Exception ex)
                         {
-
                             MessageBox.Show(ex.Message);
                         }
                         break;
@@ -308,8 +305,128 @@ namespace FormPrincipal
 
         private void btnVender_Click(object sender, EventArgs e)
         {
+            frmVisualizador frmVisualizador = new frmVisualizador();
+            int index = 0;
+            frmSeleccionAeronave.ShowDialog();
+            if (frmSeleccionAeronave.DialogResult == DialogResult.OK)
+            {
 
+                switch (frmSeleccionAeronave.eleccion)
+                {
+                    case 0:
+                        if (!this.ConfigurarDataAdapterAvion(Properties.Settings.Default.aeronavesNoVendidas))
+                        {
+                            MessageBox.Show("ERROR AL CONFIGURAR EL DATAADAPTER!!!");
+                            this.Close();
+                        }
+                        try
+                        {
+                            this.ConfigurarDataTableAvion();
+                            this.da.Fill(this.dt);
+
+                            frmVisualizador.dgvGrilla.DataSource = this.dt;
+                            frmVisualizador.ShowDialog();
+                            if (frmVisualizador.DialogResult == DialogResult.OK)
+                            {
+                                index = frmVisualizador.dgvGrilla.SelectedRows[0].Index;
+                                this.AvionFromGrilla(this.dt, index);
+                                this.dt.Rows[index].Delete(); 
+                                this.da.Update(this.dt);
+                            }
+                            if (!this.ConfigurarDataAdapterAvion(Properties.Settings.Default.aeronavesVendidas))
+                            {
+                                MessageBox.Show("ERROR AL CONFIGURAR EL DATAADAPTER!!!");
+                                this.Close();
+                            }
+                            if (this.AgregadoABD(0))
+                            {
+                                MessageBox.Show("AERONAVE VENDIDA");
+                                MessageBox.Show("AERONAVE AGREGADA A LA BASE DE DATOS DE LOS VENDIDOS");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+
+                            MessageBox.Show(ex.Message);
+                        }
+                        break;
+                    case 1:
+                        if (!this.ConfigurarDataAdapterHelicoptero(Properties.Settings.Default.aeronavesNoVendidas))
+                        {
+                            MessageBox.Show("ERROR AL CONFIGURAR EL DATAADAPTER!!!");
+                            this.Close();
+                        }
+                        try
+                        {
+                            this.ConfigurarDataTableHelicoptero();
+                            this.da.Fill(this.dt);
+
+                            frmVisualizador.dgvGrilla.DataSource = this.dt;
+                            frmVisualizador.ShowDialog();
+                            if (frmVisualizador.DialogResult == DialogResult.OK)
+                            {
+                                index = frmVisualizador.dgvGrilla.SelectedRows[0].Index;
+                                this.HelicopteroFromGrilla(this.dt, index);
+                                this.dt.Rows[index].Delete();
+                                this.da.Update(this.dt);
+                            }
+                            if (!this.ConfigurarDataAdapterHelicoptero(Properties.Settings.Default.aeronavesVendidas))
+                            {
+                                MessageBox.Show("ERROR AL CONFIGURAR EL DATAADAPTER!!!");
+                                this.Close();
+                            }
+                            if (this.AgregadoABD(1))
+                            {
+                                MessageBox.Show("AERONAVE VENDIDA");
+                                MessageBox.Show("AERONAVE AGREGADA A LA BASE DE DATOS DE LOS VENDIDOS");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+
+                            MessageBox.Show(ex.Message);
+                        }
+                        break;
+                    case 2:
+                         if (!this.ConfigurarDataAdapterPlaneador(Properties.Settings.Default.aeronavesNoVendidas))
+                        {
+                            MessageBox.Show("ERROR AL CONFIGURAR EL DATAADAPTER!!!");
+                            this.Close();
+                        }
+                        try
+                        {
+                            this.ConfigurarDataTablePlaneador();
+                            this.da.Fill(this.dt);
+
+                            frmVisualizador.dgvGrilla.DataSource = this.dt;
+                            frmVisualizador.ShowDialog();
+                            if (frmVisualizador.DialogResult == DialogResult.OK)
+                            {
+                                index = frmVisualizador.dgvGrilla.SelectedRows[0].Index;
+                                this.PlaneadorFromGrilla(this.dt, index);
+                                this.dt.Rows[index].Delete(); 
+                                this.da.Update(this.dt);
+                            }
+                            if (!this.ConfigurarDataAdapterPlaneador(Properties.Settings.Default.aeronavesVendidas))
+                            {
+                                MessageBox.Show("ERROR AL CONFIGURAR EL DATAADAPTER!!!");
+                                this.Close();
+                            }
+                            if (this.AgregadoABD(2))
+                            {
+                                MessageBox.Show("AERONAVE VENDIDA");
+                                MessageBox.Show("AERONAVE AGREGADA A LA BASE DE DATOS DE LOS VENDIDOS");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                        break;
+                }
+            }
         }
+        
         private void btnVendidos_Click(object sender, EventArgs e) //visualizar vendidos de un mismo tipo
         {
             frmVisualizador frmVisualizador = new frmVisualizador();
@@ -317,7 +434,6 @@ namespace FormPrincipal
             frmSeleccionAeronave.ShowDialog();
             if (frmSeleccionAeronave.DialogResult == DialogResult.OK)
             {
-                frmVisualizador.ShowDialog();
                 switch (frmSeleccionAeronave.eleccion)
                 {
                     case 0: // case avion
@@ -333,6 +449,7 @@ namespace FormPrincipal
                             this.da.Fill(this.dt);
 
                             frmVisualizador.dgvGrilla.DataSource = this.dt;
+                            frmVisualizador.ShowDialog();
                         }
                         catch (Exception ex)
                         {
@@ -352,6 +469,7 @@ namespace FormPrincipal
                             this.da.Fill(this.dt);
 
                             frmVisualizador.dgvGrilla.DataSource = this.dt;
+                            frmVisualizador.ShowDialog();
                         }
                         catch (Exception ex)
                         {
@@ -365,13 +483,13 @@ namespace FormPrincipal
                             MessageBox.Show("ERROR AL CONFIGURAR EL DATAADAPTER!!!");
                             this.Close();
                         }
-
                         try
                         {
                             this.ConfigurarDataTablePlaneador();
                             this.da.Fill(this.dt);
 
                             frmVisualizador.dgvGrilla.DataSource = this.dt;
+                            frmVisualizador.ShowDialog();
                         }
                         catch (Exception ex)
                         {
@@ -648,11 +766,12 @@ namespace FormPrincipal
         #endregion
 
         #region metodos
+
         /// <summary>
-        /// Según la elección, se encarga de crear una nueva fila, llenarla con los datos del objeto y actualizar la base de datos
-        /// NOTA: LOS DATATABLE DEBEN SER CONFIGURADOS ANTES SEGÚN LA ELECCIÓN
+        /// Se encarga de sobreescribir las filas con la información del objeto según la elección que hagamos
         /// </summary>
         /// <param name="eleccion"></param>
+        /// <param name="fila"></param>
         private bool AgregadoABD(int eleccion)
         {
             bool retorno = true;
@@ -724,14 +843,17 @@ namespace FormPrincipal
             }
             return retorno;
         }
-
+        
         /// <summary>
-        /// Se encarga de sobreescribir las filas con la información del objeto según la elección que hagamos
+        /// Según la elección, se encarga de crear una nueva fila, llenarla con los datos del objeto y actualizar la base de datos
+        /// NOTA: LOS DATATABLE DEBEN SER CONFIGURADOS ANTES SEGÚN LA ELECCIÓN
         /// </summary>
         /// <param name="eleccion"></param>
-        /// <param name="fila"></param>
-        private bool ActualizadoABD(int eleccion, DataRow fila)
+        /// <param name="dt"></param>
+        /// <param name="index"></param>
+        private bool ActualizadoABD(int eleccion, DataTable dt, int index)
         {
+            DataRow fila = this.dt.Rows[index];
             bool retorno = true;
             switch (eleccion)
             {
@@ -804,26 +926,16 @@ namespace FormPrincipal
         private void Modificado(int eleccion, frmVisualizador form)
         {
             int index = form.dgvGrilla.SelectedRows[0].Index;
-            DataRow fila = this.dt.Rows[index];
             frmAvion frmAvion;
             frmHelicoptero frmHelicoptero;
             frmPlaneador frmPlaneador;
             switch (eleccion)
             {
                 case 0: // avion
-                    this.avion.Marca = fila["marca"].ToString();
-                    this.avion.Modelo = fila["modelo"].ToString();
-                    this.avion.VelocidadCrucero = int.Parse(fila["velocidadCrucero"].ToString());
-                    this.avion.VelocidadDePerdida = int.Parse(fila["velocidadPerdida"].ToString());
-                    this.avion.Precio = double.Parse(fila["precio"].ToString());
-                    this.avion.NumeroDeSerie = double.Parse(fila["numeroSerie"].ToString());
-                    //this.avion.TipoDePaso = fila["tipoPaso"].ToString();          
-                    this.avion.Autonomia = int.Parse(fila["autonomia"].ToString());
-                    this.avion.Envergadura = double.Parse(fila["envergadura"].ToString());
-                    // TRAE LOS DATOS
-
                     if(form.DialogResult == DialogResult.OK)
                     {
+                        // TRAE LOS DATOS
+                        this.AvionFromGrilla(this.dt, index); //suceptible a excepcion (sin controlar)
                         // GENERA UN NUEVO FORM DE AVION PARA PERMITIR MODIFICAR LOS DATOS
                         frmAvion = new frmAvion(this.avion);
                         frmAvion.ShowDialog();
@@ -831,50 +943,38 @@ namespace FormPrincipal
                         {
                             this.avion = frmAvion.retorno;
                             //ACTUALIZA LOS DATOS DE LA FILA SEGUN LO INGRESADO Y LOS SUBE A LA BASE DE DATOS
-                            if (this.ActualizadoABD(0, fila))
+                            if (this.ActualizadoABD(0, this.dt, index))
                                 MessageBox.Show("AERONAVE ACTUALIZADA CORRECTAMENTE");
                         }
 
                     }
                     break;
                 case 1: // helicoptero
-                    this.helicop.Marca = fila["marca"].ToString();
-                    this.helicop.Modelo = fila["modelo"].ToString();
-                    this.helicop.VelocidadCrucero = int.Parse(fila["velocidadCrucero"].ToString());
-                    this.helicop.Precio = double.Parse(fila["precio"].ToString());
-                    this.helicop.NumeroDeSerie = double.Parse(fila["numeroSerie"].ToString());
-                    this.helicop.CantidadDePalas = int.Parse(fila["cantidadPalas"].ToString());
-                    this.helicop.TechoOperativo = double.Parse(fila["techoOperativo"].ToString());
 
                     if (form.DialogResult == DialogResult.OK)
                     {
+                        this.HelicopteroFromGrilla(this.dt, index); //suceptible a excepcion (sin controlar)
                         frmHelicoptero = new frmHelicoptero(this.helicop);
                         frmHelicoptero.ShowDialog();
                         if (frmHelicoptero.DialogResult == DialogResult.OK)
                         {
                             this.helicop = frmHelicoptero.retorno;
-                            if (this.ActualizadoABD(1, fila))
+                            if (this.ActualizadoABD(1, this.dt, index))
                                 MessageBox.Show("AERONAVE ACTUALIZADA CORRECTAMENTE");
                         }
 
                     }
                     break;
                 case 2: // planeador
-                    this.planeador.Marca = fila["marca"].ToString();
-                    this.planeador.Modelo = fila["modelo"].ToString();
-                    this.planeador.VelocidadCrucero = int.Parse(fila["velocidadCrucero"].ToString());
-                    this.planeador.Precio = double.Parse(fila["precio"].ToString());
-                    this.planeador.NumeroDeSerie = double.Parse(fila["numeroSerie"].ToString());
-                    this.planeador.Envergadura = double.Parse(fila["envergadura"].ToString());
-
                     if (form.DialogResult == DialogResult.OK)
                     {
+                        this.PlaneadorFromGrilla(this.dt, index); //suceptible a excepcion (sin controlar)
                         frmPlaneador = new frmPlaneador(this.planeador);
                         frmPlaneador.ShowDialog();
                         if (frmPlaneador.DialogResult == DialogResult.OK)
                         {
                             this.planeador = frmPlaneador.retorno;
-                            if (this.ActualizadoABD(2, fila))
+                            if (this.ActualizadoABD(2, this.dt, index))
                                 MessageBox.Show("AERONAVE ACTUALIZADA CORRECTAMENTE");
                         }
 
@@ -882,8 +982,49 @@ namespace FormPrincipal
                     break;
             }
         }
+       
+        #region objetos desde la grilla
+        private void AvionFromGrilla(DataTable dt, int index)
+        {
+            DataRow fila = this.dt.Rows[index];
 
-        
+            this.avion.Marca = fila["marca"].ToString();
+            this.avion.Modelo = fila["modelo"].ToString();
+            this.avion.VelocidadCrucero = int.Parse(fila["velocidadCrucero"].ToString());
+            this.avion.VelocidadDePerdida = int.Parse(fila["velocidadPerdida"].ToString());
+            this.avion.Precio = double.Parse(fila["precio"].ToString());
+            this.avion.NumeroDeSerie = double.Parse(fila["numeroSerie"].ToString());
+            //this.avion.TipoDePaso = fila["tipoPaso"].ToString();          
+            this.avion.Autonomia = int.Parse(fila["autonomia"].ToString());
+            this.avion.Envergadura = double.Parse(fila["envergadura"].ToString());
+
+        }
+        private void HelicopteroFromGrilla(DataTable dt, int index)
+        {
+            DataRow fila = this.dt.Rows[index];
+
+            this.helicop.Marca = fila["marca"].ToString();
+            this.helicop.Modelo = fila["modelo"].ToString();
+            this.helicop.VelocidadCrucero = int.Parse(fila["velocidadCrucero"].ToString());
+            this.helicop.Precio = double.Parse(fila["precio"].ToString());
+            this.helicop.NumeroDeSerie = double.Parse(fila["numeroSerie"].ToString());
+            this.helicop.CantidadDePalas = int.Parse(fila["cantidadPalas"].ToString());
+            this.helicop.TechoOperativo = double.Parse(fila["techoOperativo"].ToString());
+
+        }
+        private void PlaneadorFromGrilla(DataTable dt, int index)
+        {
+            DataRow fila = this.dt.Rows[index];
+
+            this.planeador.Marca = fila["marca"].ToString();
+            this.planeador.Modelo = fila["modelo"].ToString();
+            this.planeador.VelocidadCrucero = int.Parse(fila["velocidadCrucero"].ToString());
+            this.planeador.Precio = double.Parse(fila["precio"].ToString());
+            this.planeador.NumeroDeSerie = double.Parse(fila["numeroSerie"].ToString());
+            this.planeador.Envergadura = double.Parse(fila["envergadura"].ToString());
+        }
+        #endregion
+
         #endregion
 
     }
