@@ -18,3 +18,8 @@ C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\R
 C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.exe
 C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.pdb
 C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.frmVisualizador.resources
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\bin\Debug\Interop.WMPLib.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\Interop.WMPLib.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\Formularios.csproj.ResolveComReference.cache

@@ -36,6 +36,7 @@ namespace FormPrincipal
             this.btnVendidos = new System.Windows.Forms.Button();
             this.btnBBDD = new System.Windows.Forms.Button();
             this.btnVender = new System.Windows.Forms.Button();
+            this.btnXml = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAgregar
@@ -80,7 +81,7 @@ namespace FormPrincipal
             // 
             // btnBBDD
             // 
-            this.btnBBDD.Location = new System.Drawing.Point(908, 562);
+            this.btnBBDD.Location = new System.Drawing.Point(897, 514);
             this.btnBBDD.Name = "btnBBDD";
             this.btnBBDD.Size = new System.Drawing.Size(99, 69);
             this.btnBBDD.TabIndex = 4;
@@ -98,14 +99,24 @@ namespace FormPrincipal
             this.btnVender.UseVisualStyleBackColor = true;
             this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
             // 
+            // btnXml
+            // 
+            this.btnXml.Location = new System.Drawing.Point(886, 589);
+            this.btnXml.Name = "btnXml";
+            this.btnXml.Size = new System.Drawing.Size(121, 72);
+            this.btnXml.TabIndex = 6;
+            this.btnXml.Text = "BackUp Aviones";
+            this.btnXml.UseVisualStyleBackColor = true;
+            this.btnXml.Click += new System.EventHandler(this.btnXml_Click);
+            // 
             // frmPrincipal
             // 
             this.AccessibleName = "Formulario de inicio";
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FormPrincipal.Properties.Resources._738_puntoDeEspera;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1019, 685);
+            this.Controls.Add(this.btnXml);
             this.Controls.Add(this.btnVender);
             this.Controls.Add(this.btnBBDD);
             this.Controls.Add(this.btnVendidos);
@@ -118,6 +129,7 @@ namespace FormPrincipal
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal_FormClosing);
             this.ResumeLayout(false);
 
         }
@@ -130,6 +142,7 @@ namespace FormPrincipal
         private System.Windows.Forms.Button btnVendidos;
         private System.Windows.Forms.Button btnBBDD;
         private System.Windows.Forms.Button btnVender;
+        private System.Windows.Forms.Button btnXml;
     }
 }
 

@@ -26,8 +26,8 @@ namespace FormPrincipal
             this.textBoxPrecio.Text = helicop.Precio.ToString();
             this.textBoxNumSerie.Text = helicop.NumeroDeSerie.ToString();
             this.textBoxVelCrucero.Text = helicop.VelocidadCrucero.ToString();
-            //this.numericCantPalas = helicop.CantidadDePalas;
-            //this.numericTechoOperativo = helicop.TechoOperativo;
+            this.numericCantPalas.Value = helicop.CantidadDePalas;
+            this.numericTechoOperativo.Value = decimal.Parse(helicop.TechoOperativo.ToString());
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

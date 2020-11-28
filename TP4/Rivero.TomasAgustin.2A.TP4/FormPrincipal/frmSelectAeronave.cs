@@ -17,6 +17,7 @@ namespace FormPrincipal
         {
             InitializeComponent();
             this.DialogResult = DialogResult.None;
+            this.cbSeleccion.SelectedIndex = 0;
         }
 
         

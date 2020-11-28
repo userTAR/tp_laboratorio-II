@@ -26,7 +26,10 @@ namespace FormPrincipal
             this.textBoxAutonomia.Text = avion.Autonomia.ToString();
             this.textBoxVelPerdida.Text = avion.VelocidadDePerdida.ToString();
             this.textBoxEnvergadura.Text = avion.Envergadura.ToString();
-            //this.cbTipoPaso.SelectedIndex = avion.;
+            if (avion.TipoDePaso.ToString() == "Fijo")
+                this.cbTipoPaso.SelectedIndex = 0;
+            else
+                this.cbTipoPaso.SelectedIndex = 1;
             this.textBoxPrecio.Text = avion.Precio.ToString();
             this.textBoxNumSerie.Text = avion.NumeroDeSerie.ToString();
             this.textBoxVelCrucero.Text = avion.VelocidadCrucero.ToString();

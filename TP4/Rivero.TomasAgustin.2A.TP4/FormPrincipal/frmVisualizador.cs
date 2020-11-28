@@ -67,6 +67,5 @@ namespace FormPrincipal
             this.Close();
         }
 
-        
     }
 }
