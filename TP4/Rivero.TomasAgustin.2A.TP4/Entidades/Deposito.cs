@@ -19,9 +19,15 @@ namespace Entidades
             get { return this.lista; }
         }
         #endregion
+        #region constructores
+        public Deposito()
+        {
+            this.lista = new List<T>();
+        }
 
+        #endregion
         #region metodos
-        public string MostrarInformacion()
+        private string MostrarInformacion()
         {
             StringBuilder sb = new StringBuilder();
             foreach(T elemento in this.Lista)
@@ -45,11 +51,33 @@ namespace Entidades
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Las aeronaves del depósito son las siguientes:");
+            sb.AppendFormat("Las aeronaves del depósito suman: {0} y son las siguientes:\n", this.ImprimirTotal());
             sb.AppendLine("-----------------------------------------------");
             sb.Append(this.MostrarInformacion());
             return sb.ToString();
         }
+
+        public static bool operator ==(Deposito<T> deposito, T Aeronave)
+        {
+            return deposito.Lista.Contains(Aeronave);
+        }
+        public static bool operator !=(Deposito<T> deposito, T Aeronave)
+        {
+            return (!(deposito == Aeronave));
+        }
+        public static Deposito<T> operator +(Deposito<T> deposito, T aeronave)
+        {
+            if (deposito != aeronave)
+                deposito.Lista.Add(aeronave);
+            return deposito;
+        }
+        public static Deposito<T> operator -(Deposito<T> deposito, T aeronave)
+        {
+            if (deposito == aeronave)
+                deposito.Lista.Remove(aeronave);
+            return deposito;
+        }
+
         #endregion
     }
 }

@@ -8,7 +8,6 @@ namespace Entidades
 {
     public interface Interfaz
     {
-        string MostrarInformacion();
         string ImprimirTotal();
     }
 }

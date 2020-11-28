@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Aeronave.cs" />
     <Compile Include="Avion.cs" />
+    <Compile Include="ExtensionAvion.cs" />
+    <Compile Include="Xml.cs" />
     <Compile Include="Interfaz.cs" />
     <Compile Include="Deposito.cs" />
     <Compile Include="Planeador.cs" />

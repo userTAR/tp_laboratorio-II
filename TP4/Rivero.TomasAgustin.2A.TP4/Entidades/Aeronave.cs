@@ -75,9 +75,6 @@ namespace Entidades
                     throw new PrecioException();
             }
         }
-        /// <summary>
-        /// Propiedad abstracta de Ala
-        /// </summary>
         public abstract EAla Ala { get; }
         #endregion
 
@@ -111,7 +108,7 @@ namespace Entidades
         protected virtual string InfoAeronave()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Marca: {0} // Modelo: {1}\n", this.marca, this.modelo);
+            sb.AppendFormat("Marca: {0} // Modelo: {1} // Precio : ${2}\n", this.marca, this.modelo, this.Precio);
             sb.AppendFormat("Velocidad Crucero: {0}\n", this.velocidadCrucero);
             return sb.ToString();
         }

@@ -97,7 +97,7 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.InfoAeronave());
-            sb.AppendFormat("Velocidad de pérdida: {0} // Envergadura: {1}\nTipo de paso: {2} // Autonomia: {3}\nTipo de ala: {4}\n\n", this.VelocidadDePerdida, this.Envergadura, this.TipoDePaso.ToString(), this.Autonomia, this.Ala);
+            sb.AppendFormat("Velocidad de pérdida: {0} // Envergadura: {1}\nTipo de paso: {2} // Autonomia: {3}\nTipo de ala: {4}\n\n", this.VelocidadDePerdida, this.Envergadura, this.TipoDePaso.ToString(), this.MostrarAutonomia(), this.Ala);
             return sb.ToString();
         }
 
@@ -108,6 +108,14 @@ namespace Entidades
         public override string ToString()
         {
             return this.InfoAeronave();
+        }
+
+        public override bool Equals(object obj)
+        {
+            bool rta = false;
+            if (obj is Avion)
+                rta = this == (Avion)obj;
+            return rta;
         }
         #endregion
     }
