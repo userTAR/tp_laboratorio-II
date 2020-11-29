@@ -105,6 +105,10 @@ namespace Entidades
         #endregion
 
         #region sobrecargas
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>Retorna string con la información de la aeronave</returns>
         public override string ToString()
         {
             return this.InfoAeronave();

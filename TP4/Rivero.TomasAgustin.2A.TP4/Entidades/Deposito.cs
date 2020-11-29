@@ -48,15 +48,25 @@ namespace Entidades
         #endregion
 
         #region sobrecargas
+        /// <summary>
+        /// Concatena el precio total de las aeronaves y todas las aeronaves dentro del deposito
+        /// </summary>
+        /// <returns>cadena con el total y las aeronaves del deposito</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Las aeronaves del depósito suman: {0} y son las siguientes:\n", this.ImprimirTotal());
+            sb.AppendFormat("Las aeronaves del depósito suman: U$S{0} y son las siguientes:\n", this.ImprimirTotal());
             sb.AppendLine("-----------------------------------------------");
             sb.Append(this.MostrarInformacion());
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Un deposito y una aeronave son iguales si el primero contiene al segundo
+        /// </summary>
+        /// <param name="deposito"></param>
+        /// <param name="Aeronave"></param>
+        /// <returns></returns>
         public static bool operator ==(Deposito<T> deposito, T Aeronave)
         {
             return deposito.Lista.Contains(Aeronave);
@@ -65,12 +75,24 @@ namespace Entidades
         {
             return (!(deposito == Aeronave));
         }
+        /// <summary>
+        /// Si la aeronave no esta en el deposito, se agrega a la lista
+        /// </summary>
+        /// <param name="deposito"></param>
+        /// <param name="aeronave"></param>
+        /// <returns></returns>
         public static Deposito<T> operator +(Deposito<T> deposito, T aeronave)
         {
             if (deposito != aeronave)
                 deposito.Lista.Add(aeronave);
             return deposito;
         }
+        /// <summary>
+        /// Si la aeronave esta en el deposito, se quita de la lista
+        /// </summary>
+        /// <param name="deposito"></param>
+        /// <param name="aeronave"></param>
+        /// <returns></returns>
         public static Deposito<T> operator -(Deposito<T> deposito, T aeronave)
         {
             if (deposito == aeronave)

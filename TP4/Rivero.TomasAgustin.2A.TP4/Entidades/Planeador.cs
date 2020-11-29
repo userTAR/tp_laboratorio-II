@@ -57,7 +57,7 @@ namespace Entidades
         /// <summary>
         /// Concatena la información del planeador
         /// </summary>
-        /// <returns>string de la cadena</returns>
+        /// <returns>string con la cadena</returns>
         protected override string InfoAeronave()
         {
             StringBuilder sb = new StringBuilder();
@@ -68,6 +68,10 @@ namespace Entidades
         #endregion
 
         #region sobrecargas
+        /// <summary>
+        /// Llama internamente a InfoAeronave
+        /// </summary>
+        /// <returns>String con la informacion del planeador</returns>
         public override string ToString()
         {
             return this.InfoAeronave();

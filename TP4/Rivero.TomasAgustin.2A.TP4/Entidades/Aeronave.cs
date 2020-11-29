@@ -108,7 +108,7 @@ namespace Entidades
         protected virtual string InfoAeronave()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Marca: {0} // Modelo: {1} // Precio : ${2}\n", this.marca, this.modelo, this.Precio);
+            sb.AppendFormat("Marca: {0} // Modelo: {1} // Precio : U$S{2}\n", this.marca, this.modelo, this.Precio);
             sb.AppendFormat("Velocidad Crucero: {0}\n", this.velocidadCrucero);
             return sb.ToString();
         }
@@ -122,7 +122,12 @@ namespace Entidades
                 rta = this == (Aeronave)obj;
             return rta;
         }
-
+        /// <summary>
+        /// Dos aeronaves son iguales si su marca y su numero de serie son iguales
+        /// </summary>
+        /// <param name="a1"></param>
+        /// <param name="a2"></param>
+        /// <returns></returns>
         public static bool operator ==(Aeronave a1, Aeronave a2)
         {
             return a1.Marca == a2.Marca && a1.NumeroDeSerie == a2.NumeroDeSerie;

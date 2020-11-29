@@ -11,6 +11,11 @@ namespace Entidades
 {
     public class Xml
     {
+        /// <summary>
+        /// Guarda el deposito en un archivo XML
+        /// </summary>
+        /// <param name="deposito"></param>
+        /// <returns>True si pudo guardarlo, si no: False</returns>
         public static bool GuardarXml(Deposito<Avion> deposito)
         {
             bool rta = false;
@@ -33,7 +38,10 @@ namespace Entidades
             }
             return rta;
         }
-        public static string Path
+        /// <summary>
+        /// Propiedad get del Path
+        /// </summary>
+        private static string Path
         {
             get
             {
@@ -43,6 +51,11 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Guarda en el out deposito, la informacion del archivo XML
+        /// </summary>
+        /// <param name="deposito"></param>
+        /// <returns>True si pudo leerlo, si no: False</returns>
         public static bool LeerXml(out Deposito<Avion> deposito)
         {
             deposito = null;

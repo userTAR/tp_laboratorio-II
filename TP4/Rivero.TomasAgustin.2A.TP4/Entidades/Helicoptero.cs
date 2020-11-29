@@ -70,6 +70,10 @@ namespace Entidades
         #endregion
 
         #region metodos
+        /// <summary>
+        /// Concatena toda la informacion del helicoptero
+        /// </summary>
+        /// <returns>string con la informacion</returns>
         protected override string InfoAeronave()
         {
             StringBuilder sb = new StringBuilder();
@@ -80,6 +84,10 @@ namespace Entidades
         #endregion
 
         #region sobrecargas
+        /// <summary>
+        /// Llama internamente a Infoaeronave
+        /// </summary>
+        /// <returns>String con la informacion del helicoptero</returns>
         public override string ToString()
         {
             return this.InfoAeronave();

@@ -8,6 +8,10 @@ namespace Entidades
 {
     public interface Interfaz
     {
+        /// <summary>
+        /// Suma el total de los precios
+        /// </summary>
+        /// <returns></returns>
         string ImprimirTotal();
     }
 }
