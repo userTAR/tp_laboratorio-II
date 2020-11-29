@@ -1,0 +1,16 @@
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\bin\Debug\FormPrincipal.exe.config
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\bin\Debug\FormPrincipal.exe
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\bin\Debug\FormPrincipal.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\bin\Debug\Entidades.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\bin\Debug\Excepciones.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\bin\Debug\Entidades.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\bin\Debug\Excepciones.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.csprojAssemblyReference.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.frmPrincipal.resources
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.Properties.Resources.resources
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.frmSelectAeronave.resources
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.csproj.GenerateResource.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.csproj.CoreCompileInputs.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.csproj.CopyComplete
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.exe
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\TP4\Rivero.TomasAgustin.2A.TP4\FormPrincipal\obj\Debug\FormPrincipal.pdb
