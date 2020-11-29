@@ -13,6 +13,10 @@ namespace FormPrincipal
     public partial class frmSelectAeronave : Form
     {
         public int eleccion;
+        
+        /// <summary>
+        /// Constructor que inicializa el indice seleccionado en 0
+        /// </summary>
         public frmSelectAeronave()
         {
             InitializeComponent();
@@ -21,7 +25,11 @@ namespace FormPrincipal
         }
 
         
-
+        /// <summary>
+        /// Al apretar el boton aceptar, define el indice de la seleccion en la variable publica "eleccio"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;

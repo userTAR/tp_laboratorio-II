@@ -18,6 +18,10 @@ namespace FormPrincipal
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Constructor del form que establece los valores inicales de los componentes
+        /// </summary>
+        /// <param name="avion"></param>
         public frmAvion(Avion avion)
         {
             InitializeComponent();
@@ -35,6 +39,11 @@ namespace FormPrincipal
             this.textBoxVelCrucero.Text = avion.VelocidadCrucero.ToString();
         }
 
+        /// <summary>
+        /// Guarda todos los datos del formulario en la variable, al hacer click en el boton, para poder acceder la variable desde fuera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
             string marca = null;

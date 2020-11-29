@@ -54,7 +54,7 @@ namespace FormPrincipal
             this.btnAceptar.Location = new System.Drawing.Point(101, 392);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(102, 46);
-            this.btnAceptar.TabIndex = 29;
+            this.btnAceptar.TabIndex = 7;
             this.btnAceptar.Text = "Ingresar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -82,7 +82,7 @@ namespace FormPrincipal
             this.textBoxModelo.Location = new System.Drawing.Point(199, 138);
             this.textBoxModelo.Name = "textBoxModelo";
             this.textBoxModelo.Size = new System.Drawing.Size(100, 26);
-            this.textBoxModelo.TabIndex = 26;
+            this.textBoxModelo.TabIndex = 2;
             // 
             // lblMarca
             // 
@@ -98,7 +98,7 @@ namespace FormPrincipal
             this.textBoxMarca.Location = new System.Drawing.Point(11, 138);
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(100, 26);
-            this.textBoxMarca.TabIndex = 24;
+            this.textBoxMarca.TabIndex = 1;
             // 
             // lblMetros
             // 
@@ -123,7 +123,7 @@ namespace FormPrincipal
             this.textBoxEnvergadura.Location = new System.Drawing.Point(103, 200);
             this.textBoxEnvergadura.Name = "textBoxEnvergadura";
             this.textBoxEnvergadura.Size = new System.Drawing.Size(100, 26);
-            this.textBoxEnvergadura.TabIndex = 30;
+            this.textBoxEnvergadura.TabIndex = 3;
             // 
             // lblNumSerie
             // 
@@ -139,7 +139,7 @@ namespace FormPrincipal
             this.textBoxNumSerie.Location = new System.Drawing.Point(199, 331);
             this.textBoxNumSerie.Name = "textBoxNumSerie";
             this.textBoxNumSerie.Size = new System.Drawing.Size(100, 26);
-            this.textBoxNumSerie.TabIndex = 36;
+            this.textBoxNumSerie.TabIndex = 6;
             // 
             // lblDolares
             // 
@@ -164,7 +164,7 @@ namespace FormPrincipal
             this.textBoxPrecio.Location = new System.Drawing.Point(4, 331);
             this.textBoxPrecio.Name = "textBoxPrecio";
             this.textBoxPrecio.Size = new System.Drawing.Size(100, 26);
-            this.textBoxPrecio.TabIndex = 33;
+            this.textBoxPrecio.TabIndex = 5;
             // 
             // lblKnots
             // 
@@ -189,7 +189,7 @@ namespace FormPrincipal
             this.textBoxVelCrucero.Location = new System.Drawing.Point(103, 264);
             this.textBoxVelCrucero.Name = "textBoxVelCrucero";
             this.textBoxVelCrucero.Size = new System.Drawing.Size(100, 26);
-            this.textBoxVelCrucero.TabIndex = 38;
+            this.textBoxVelCrucero.TabIndex = 4;
             // 
             // frmPlaneador
             // 

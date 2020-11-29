@@ -75,7 +75,7 @@ namespace FormPrincipal
             this.textBoxModelo.Location = new System.Drawing.Point(198, 118);
             this.textBoxModelo.Name = "textBoxModelo";
             this.textBoxModelo.Size = new System.Drawing.Size(100, 26);
-            this.textBoxModelo.TabIndex = 16;
+            this.textBoxModelo.TabIndex = 2;
             // 
             // lblMarca
             // 
@@ -91,7 +91,7 @@ namespace FormPrincipal
             this.textBoxMarca.Location = new System.Drawing.Point(10, 118);
             this.textBoxMarca.Name = "textBoxMarca";
             this.textBoxMarca.Size = new System.Drawing.Size(100, 26);
-            this.textBoxMarca.TabIndex = 14;
+            this.textBoxMarca.TabIndex = 1;
             // 
             // numericCantPalas
             // 
@@ -108,7 +108,7 @@ namespace FormPrincipal
             0});
             this.numericCantPalas.Name = "numericCantPalas";
             this.numericCantPalas.Size = new System.Drawing.Size(120, 26);
-            this.numericCantPalas.TabIndex = 19;
+            this.numericCantPalas.TabIndex = 4;
             this.numericCantPalas.Value = new decimal(new int[] {
             2,
             0,
@@ -144,7 +144,7 @@ namespace FormPrincipal
             0});
             this.numericTechoOperativo.Name = "numericTechoOperativo";
             this.numericTechoOperativo.Size = new System.Drawing.Size(120, 26);
-            this.numericTechoOperativo.TabIndex = 21;
+            this.numericTechoOperativo.TabIndex = 5;
             this.numericTechoOperativo.ThousandsSeparator = true;
             this.numericTechoOperativo.Value = new decimal(new int[] {
             25000,
@@ -166,7 +166,7 @@ namespace FormPrincipal
             this.btnAceptar.Location = new System.Drawing.Point(103, 369);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(102, 46);
-            this.btnAceptar.TabIndex = 23;
+            this.btnAceptar.TabIndex = 8;
             this.btnAceptar.Text = "Ingresar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -185,7 +185,7 @@ namespace FormPrincipal
             this.textBoxNumSerie.Location = new System.Drawing.Point(205, 312);
             this.textBoxNumSerie.Name = "textBoxNumSerie";
             this.textBoxNumSerie.Size = new System.Drawing.Size(100, 26);
-            this.textBoxNumSerie.TabIndex = 27;
+            this.textBoxNumSerie.TabIndex = 7;
             // 
             // lblDolares
             // 
@@ -210,7 +210,7 @@ namespace FormPrincipal
             this.textBoxPrecio.Location = new System.Drawing.Point(10, 312);
             this.textBoxPrecio.Name = "textBoxPrecio";
             this.textBoxPrecio.Size = new System.Drawing.Size(100, 26);
-            this.textBoxPrecio.TabIndex = 24;
+            this.textBoxPrecio.TabIndex = 6;
             // 
             // label1
             // 
@@ -235,7 +235,7 @@ namespace FormPrincipal
             this.textBoxVelCrucero.Location = new System.Drawing.Point(87, 173);
             this.textBoxVelCrucero.Name = "textBoxVelCrucero";
             this.textBoxVelCrucero.Size = new System.Drawing.Size(100, 26);
-            this.textBoxVelCrucero.TabIndex = 29;
+            this.textBoxVelCrucero.TabIndex = 3;
             // 
             // frmHelicoptero
             // 

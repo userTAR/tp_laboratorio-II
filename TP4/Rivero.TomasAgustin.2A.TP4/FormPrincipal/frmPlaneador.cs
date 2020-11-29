@@ -18,6 +18,11 @@ namespace FormPrincipal
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Constructor del form que establece los valores inicales de los componentes
+        /// </summary>
+        /// <param name="planeador"></param>
         public frmPlaneador(Planeador planeador)
         {
             InitializeComponent();
@@ -29,6 +34,11 @@ namespace FormPrincipal
             this.textBoxEnvergadura.Text = planeador.Envergadura.ToString();
         }
 
+        /// <summary>
+        /// Guarda todos los datos del formulario en la variable, al hacer click en el boton, para poder acceder la variable desde fuera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             string marca = null;

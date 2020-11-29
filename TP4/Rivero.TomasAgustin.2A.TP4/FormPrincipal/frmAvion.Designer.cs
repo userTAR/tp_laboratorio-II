@@ -87,7 +87,7 @@ namespace FormPrincipal
             this.textBoxModelo.Location = new System.Drawing.Point(164, 112);
             this.textBoxModelo.Name = "textBoxModelo";
             this.textBoxModelo.Size = new System.Drawing.Size(100, 26);
-            this.textBoxModelo.TabIndex = 3;
+            this.textBoxModelo.TabIndex = 2;
             // 
             // lblAutonomia
             // 
@@ -103,7 +103,7 @@ namespace FormPrincipal
             this.textBoxAutonomia.Location = new System.Drawing.Point(3, 192);
             this.textBoxAutonomia.Name = "textBoxAutonomia";
             this.textBoxAutonomia.Size = new System.Drawing.Size(100, 26);
-            this.textBoxAutonomia.TabIndex = 5;
+            this.textBoxAutonomia.TabIndex = 3;
             // 
             // lblEnvergadura
             // 
@@ -119,7 +119,7 @@ namespace FormPrincipal
             this.textBoxEnvergadura.Location = new System.Drawing.Point(164, 192);
             this.textBoxEnvergadura.Name = "textBoxEnvergadura";
             this.textBoxEnvergadura.Size = new System.Drawing.Size(100, 26);
-            this.textBoxEnvergadura.TabIndex = 7;
+            this.textBoxEnvergadura.TabIndex = 4;
             // 
             // lblVelPerdida
             // 
@@ -135,7 +135,7 @@ namespace FormPrincipal
             this.textBoxVelPerdida.Location = new System.Drawing.Point(3, 279);
             this.textBoxVelPerdida.Name = "textBoxVelPerdida";
             this.textBoxVelPerdida.Size = new System.Drawing.Size(100, 26);
-            this.textBoxVelPerdida.TabIndex = 9;
+            this.textBoxVelPerdida.TabIndex = 5;
             // 
             // lblPaso
             // 
@@ -151,7 +151,7 @@ namespace FormPrincipal
             this.btnAceptar.Location = new System.Drawing.Point(100, 469);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(102, 46);
-            this.btnAceptar.TabIndex = 12;
+            this.btnAceptar.TabIndex = 10;
             this.btnAceptar.Text = "Ingresar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click_1);
@@ -215,7 +215,7 @@ namespace FormPrincipal
             this.textBoxPrecio.Location = new System.Drawing.Point(3, 420);
             this.textBoxPrecio.Name = "textBoxPrecio";
             this.textBoxPrecio.Size = new System.Drawing.Size(100, 26);
-            this.textBoxPrecio.TabIndex = 17;
+            this.textBoxPrecio.TabIndex = 8;
             // 
             // lblNumSerie
             // 
@@ -231,7 +231,7 @@ namespace FormPrincipal
             this.textBoxNumSerie.Location = new System.Drawing.Point(198, 420);
             this.textBoxNumSerie.Name = "textBoxNumSerie";
             this.textBoxNumSerie.Size = new System.Drawing.Size(100, 26);
-            this.textBoxNumSerie.TabIndex = 20;
+            this.textBoxNumSerie.TabIndex = 9;
             // 
             // cbTipoPaso
             // 
@@ -244,7 +244,7 @@ namespace FormPrincipal
             this.cbTipoPaso.Location = new System.Drawing.Point(191, 285);
             this.cbTipoPaso.Name = "cbTipoPaso";
             this.cbTipoPaso.Size = new System.Drawing.Size(107, 28);
-            this.cbTipoPaso.TabIndex = 22;
+            this.cbTipoPaso.TabIndex = 6;
             // 
             // label1
             // 
@@ -269,7 +269,7 @@ namespace FormPrincipal
             this.textBoxVelCrucero.Location = new System.Drawing.Point(82, 354);
             this.textBoxVelCrucero.Name = "textBoxVelCrucero";
             this.textBoxVelCrucero.Size = new System.Drawing.Size(100, 26);
-            this.textBoxVelCrucero.TabIndex = 23;
+            this.textBoxVelCrucero.TabIndex = 7;
             // 
             // frmAvion
             // 

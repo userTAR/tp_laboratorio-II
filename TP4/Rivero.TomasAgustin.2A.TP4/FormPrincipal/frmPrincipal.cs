@@ -656,6 +656,10 @@ namespace FormPrincipal
             }
         }
         #region metodo de hilo
+        /// <summary>
+        /// Cambia el fondo de pantalla cada 3 segundos
+        /// </summary>
+        /// <param name="param"></param>
         private void CambiarFondo(Object param)
         {
 
@@ -724,9 +728,9 @@ namespace FormPrincipal
                     fila["autonomia"] = this.avion.Autonomia;
                     fila["envergadura"] = this.avion.Envergadura;
 
-                    this.dt.Rows.Add(fila);
                     try
                     {
+                        this.dt.Rows.Add(fila);
                         this.da.Update(this.dt);
                     }
                     catch(Exception ex)
@@ -744,9 +748,9 @@ namespace FormPrincipal
                     fila["cantidadPalas"] = this.helicop.CantidadDePalas;
                     fila["techoOperativo"] = this.helicop.TechoOperativo;
 
-                    this.dt.Rows.Add(fila);
                     try
                     {
+                        this.dt.Rows.Add(fila);
                         this.da.Update(this.dt);
                     }
                     catch (Exception ex)
@@ -763,9 +767,9 @@ namespace FormPrincipal
                     fila["numeroSerie"] = this.planeador.NumeroDeSerie;
                     fila["envergadura"] = this.planeador.Envergadura;
 
-                    this.dt.Rows.Add(fila);
                     try
                     {
+                        this.dt.Rows.Add(fila);
                         this.da.Update(this.dt);
                     }
                     catch (Exception ex)
@@ -922,6 +926,11 @@ namespace FormPrincipal
         #endregion
 
         #region objetos desde la grilla
+        /// <summary>
+        /// Establece los valores de la grilla en la variable "avion"
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <param name="index"></param>
         private void AvionFromGrilla(DataTable dt, int index)
         {
             DataRow fila = this.dt.Rows[index];
@@ -940,6 +949,11 @@ namespace FormPrincipal
             this.avion.Envergadura = double.Parse(fila["envergadura"].ToString());
 
         }
+        /// <summary>
+        /// Establece los valores de la grilla en la variable "helicoptero"
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <param name="index"></param>
         private void HelicopteroFromGrilla(DataTable dt, int index)
         {
             DataRow fila = this.dt.Rows[index];
@@ -953,6 +967,11 @@ namespace FormPrincipal
             this.helicop.TechoOperativo = double.Parse(fila["techoOperativo"].ToString());
 
         }
+        /// <summary>
+        /// Establece los valores de la grilla en la variable "planeador"
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <param name="index"></param>
         private void PlaneadorFromGrilla(DataTable dt, int index)
         {
             DataRow fila = this.dt.Rows[index];
@@ -969,6 +988,11 @@ namespace FormPrincipal
         #region configuracion de DT Y DA
 
         #region DA Y DT Avion
+        /// <summary>
+        /// Configura el dataAdapter para avion
+        /// </summary>
+        /// <param name="SQLconnectionPath"></param>
+        /// <returns></returns>
         private bool ConfigurarDataAdapterAvion(string SQLconnectionPath)
         {
             bool rta = false;
@@ -1017,6 +1041,10 @@ namespace FormPrincipal
 
             return rta;
         }
+
+        /// <summary>
+        /// Configura el data table para avion
+        /// </summary>
         private void ConfigurarDataTableAvion()
         {
             this.dt = new DataTable("Avion");
@@ -1034,6 +1062,12 @@ namespace FormPrincipal
         #endregion
 
         #region DA Y DT helicoptero
+
+        /// <summary>
+        /// Configura data adapter para helicoptero
+        /// </summary>
+        /// <param name="SQLconnectionPath"></param>
+        /// <returns></returns>
         private bool ConfigurarDataAdapterHelicoptero(string SQLconnectionPath)
         {
             bool rta = false;
@@ -1078,6 +1112,10 @@ namespace FormPrincipal
 
             return rta;
         }
+
+        /// <summary>
+        /// Configura data table para helicoptero
+        /// </summary>
         private void ConfigurarDataTableHelicoptero()
         {
             this.dt = new DataTable("Helicoptero");
@@ -1094,6 +1132,12 @@ namespace FormPrincipal
         #endregion
 
         #region DA Y DT planeador
+
+        /// <summary>
+        /// Configura el data adapter para planeador
+        /// </summary>
+        /// <param name="SQLconnectionPath"></param>
+        /// <returns></returns>
         private bool ConfigurarDataAdapterPlaneador(string SQLconnectionPath)
         {
             bool rta = false;
@@ -1135,6 +1179,10 @@ namespace FormPrincipal
 
             return rta;
         }
+
+        /// <summary>
+        /// Configura la data table para planeador
+        /// </summary>
         private void ConfigurarDataTablePlaneador()
         {
             this.dt = new DataTable("Planeador");
