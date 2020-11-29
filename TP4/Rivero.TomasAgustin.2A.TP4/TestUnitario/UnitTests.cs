@@ -9,6 +9,7 @@ namespace TestUnitario
     public class UnitTests
     {
         [TestMethod]
+        //Chequea que el constructor de "Deposito" instancie la lista 
         public void TestAgregarADeposito()
         {
             Deposito<Helicoptero> depHeli = new Deposito<Helicoptero>();
@@ -18,6 +19,7 @@ namespace TestUnitario
             Assert.IsNotNull(depHeli.Lista);
         }
         [TestMethod]
+        //Chequea que se lance la excepcion "TechoOpException"
         public void TestExcepcionTechoOperativo()
         {
             bool check = false;
@@ -34,6 +36,7 @@ namespace TestUnitario
             Assert.IsTrue(check);
         }
         [TestMethod]
+        //Chequea que se lance la excepcion "TestVelocidadExcepcion"
         public void TestVelocidadExcepcion()
         {
 
