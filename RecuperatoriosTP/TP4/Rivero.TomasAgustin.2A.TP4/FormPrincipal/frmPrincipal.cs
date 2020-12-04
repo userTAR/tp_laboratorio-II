@@ -39,11 +39,12 @@ namespace FormPrincipal
             if(Xml.LeerXml(out this.listaAvionesNoVendidos))
                  MessageBox.Show("XML LEÍDO");
             else
-                MessageBox.Show("ERROR EN LA LECTURA");
+                MessageBox.Show("NO SE LEYO EL XML");
             HiloDelegadoParametrizado delegado = new HiloDelegadoParametrizado(CambiarFondo);
             this.hilo = new Thread(this.CambiarFondo);
             this.hilo.Start();
         }
+        #region eventos
         /// <summary>
         /// Invoca al formulario de seleccion, dependiendo de la seleccion invoca al formulario del objeto y agrega el objeto
         /// a la base de datos
@@ -632,6 +633,8 @@ namespace FormPrincipal
             MessageBox.Show(this.listaAvionesNoVendidos.ToString());
         }
 
+        #endregion
+
         /// <summary>
         /// Pregunta al querer cerrar el formulario, si está seguro de querer salir
         /// </summary>
@@ -656,6 +659,9 @@ namespace FormPrincipal
             }
         }
         #region metodo de hilo
+
+        //NOTA: HE INTENTADO
+
         /// <summary>
         /// Cambia el fondo de pantalla cada 3 segundos
         /// </summary>

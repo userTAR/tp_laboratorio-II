@@ -59,25 +59,18 @@ namespace Entidades
         public static bool LeerXml(out Deposito<Avion> deposito)
         {
             deposito = null;
-            bool rta = false;
+            bool rta = true;
             try
             {
                 using (XmlTextReader txr = new XmlTextReader(Xml.Path))
                 {
                     XmlSerializer ser = new XmlSerializer(typeof(Deposito<Avion>));
                     deposito = (Deposito<Avion>)ser.Deserialize(txr);
-                    rta = true;
                 }
             }
-            catch (DirectoryNotFoundException e)
-            {
-                rta = false;
-            }
-
-            catch (UnauthorizedAccessException e)
-            {
-                rta = false;
-
+            catch (Exception e) 
+            { 
+                rta = false; 
             }
             return rta;
         }

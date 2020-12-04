@@ -1,0 +1,9 @@
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Entidades\bin\Release\Entidades.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Entidades\bin\Release\Entidades.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Entidades\bin\Release\Excepciones.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Entidades\bin\Release\Excepciones.pdb
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Entidades\obj\Release\Entidades.csprojAssemblyReference.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Entidades\obj\Release\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Entidades\obj\Release\Entidades.csproj.CopyComplete
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Entidades\obj\Release\Entidades.dll
+C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Entidades\obj\Release\Entidades.pdb
