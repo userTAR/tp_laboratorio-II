@@ -35,7 +35,6 @@ namespace FormPrincipal
         public frmPrincipal()
         {
             InitializeComponent();
-            this.BackgroundImage = Properties.Resources._738_puntoDeEspera;
             if(Xml.LeerXml(out this.listaAvionesNoVendidos))
                  MessageBox.Show("XML LEÍDO");
             else
