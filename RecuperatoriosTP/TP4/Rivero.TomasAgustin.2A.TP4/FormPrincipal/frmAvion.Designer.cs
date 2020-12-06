@@ -277,7 +277,7 @@ namespace FormPrincipal
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::FormPrincipal.Properties.Resources._20191110_175739;
+            this.BackgroundImage = global::FormPrincipal.Properties.Resources.LAGUNA;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(310, 551);
             this.Controls.Add(this.label1);

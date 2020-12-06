@@ -63,56 +63,6 @@ namespace FormPrincipal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _20190928_180608 {
-            get {
-                object obj = ResourceManager.GetObject("20190928_180608", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190928_180617 {
-            get {
-                object obj = ResourceManager.GetObject("20190928_180617", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190928_180618 {
-            get {
-                object obj = ResourceManager.GetObject("20190928_180618", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20191110_175739 {
-            get {
-                object obj = ResourceManager.GetObject("20191110_175739", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20191110_185628 {
-            get {
-                object obj = ResourceManager.GetObject("20191110_185628", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _738_puntoDeEspera {
             get {
                 object obj = ResourceManager.GetObject("738 puntoDeEspera", resourceCulture);
@@ -133,10 +83,40 @@ namespace FormPrincipal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap A4numerales1 {
+        internal static System.Drawing.Bitmap charlievictor {
             get {
-                object obj = ResourceManager.GetObject("A4numerales1", resourceCulture);
+                object obj = ResourceManager.GetObject("charlievictor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMPANAJE {
+            get {
+                object obj = ResourceManager.GetObject("EMPANAJE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LAGUNA {
+            get {
+                object obj = ResourceManager.GetObject("LAGUNA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+        /// </summary>
+        internal static System.Drawing.Icon plane_takeoff_13263 {
+            get {
+                object obj = ResourceManager.GetObject("plane_takeoff_13263", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

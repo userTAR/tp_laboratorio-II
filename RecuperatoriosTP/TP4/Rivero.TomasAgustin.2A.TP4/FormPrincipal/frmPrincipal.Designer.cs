@@ -74,7 +74,7 @@ namespace FormPrincipal
             this.btnVendidos.Location = new System.Drawing.Point(747, 562);
             this.btnVendidos.Name = "btnVendidos";
             this.btnVendidos.Size = new System.Drawing.Size(94, 69);
-            this.btnVendidos.TabIndex = 3;
+            this.btnVendidos.TabIndex = 4;
             this.btnVendidos.Text = "Visualizar Vendidos";
             this.btnVendidos.UseVisualStyleBackColor = true;
             this.btnVendidos.Click += new System.EventHandler(this.btnVendidos_Click);
@@ -84,7 +84,7 @@ namespace FormPrincipal
             this.btnBBDD.Location = new System.Drawing.Point(897, 514);
             this.btnBBDD.Name = "btnBBDD";
             this.btnBBDD.Size = new System.Drawing.Size(99, 69);
-            this.btnBBDD.TabIndex = 4;
+            this.btnBBDD.TabIndex = 5;
             this.btnBBDD.Text = "Visualizar Aeronaves";
             this.btnBBDD.UseVisualStyleBackColor = true;
             this.btnBBDD.Click += new System.EventHandler(this.btnBBDD_Click);
@@ -94,7 +94,7 @@ namespace FormPrincipal
             this.btnVender.Location = new System.Drawing.Point(582, 562);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(92, 74);
-            this.btnVender.TabIndex = 5;
+            this.btnVender.TabIndex = 3;
             this.btnVender.Text = "Vender Una Aeronave";
             this.btnVender.UseVisualStyleBackColor = true;
             this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
@@ -124,7 +124,8 @@ namespace FormPrincipal
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = Properties.Resources.plane_takeoff_13263;
+                //((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

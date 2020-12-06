@@ -242,7 +242,7 @@ namespace FormPrincipal
             this.AcceptButton = this.btnAceptar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FormPrincipal.Properties.Resources._20190928_180617;
+            this.BackgroundImage = global::FormPrincipal.Properties.Resources.EMPANAJE;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(310, 450);
             this.Controls.Add(this.label1);
@@ -265,7 +265,6 @@ namespace FormPrincipal
             this.Controls.Add(this.textBoxMarca);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmHelicoptero";

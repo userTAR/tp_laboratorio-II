@@ -17,6 +17,7 @@ namespace FormPrincipal
         public frmAvion()
         {
             InitializeComponent();
+            this.cbTipoPaso.SelectedIndex = 0;
         }
         /// <summary>
         /// Constructor del form que establece los valores inicales de los componentes

@@ -1,6 +1,0 @@
-C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Excepciones\bin\Release\Excepciones.dll
-C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Excepciones\bin\Release\Excepciones.pdb
-C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Excepciones\obj\Release\Excepciones.csprojAssemblyReference.cache
-C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Excepciones\obj\Release\Excepciones.csproj.CoreCompileInputs.cache
-C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Excepciones\obj\Release\Excepciones.dll
-C:\Users\Familia\1-Programacion\Segundo Cuatrimestre(C#)\tp_laboratorio-II\RecuperatoriosTP\TP4\Rivero.TomasAgustin.2A.TP4\Excepciones\obj\Release\Excepciones.pdb
